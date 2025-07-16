@@ -4,7 +4,7 @@ Created: April 2023
 Updated: July 2025
 */
 
-// v2.0
+// v2.1
 
 
 /* Constants */
@@ -324,6 +324,94 @@ function populateEmployment(obj) {
             sectionEmployment.appendChild(myEmployment);
 
             count++;
+        }
+    }
+}
+
+/* Function to populate the Experience section of the website. Looks for ID=experienceCards */
+function populateExperience(obj) {
+    const sectionExperiences = document.querySelector("#experienceCards");
+
+    for (const experience of obj.Experiences) {
+        if ((!document.title.includes("Experience") && experience.show == "main") || (document.title.includes("Experience") && (experience.show == "main" || experience.show == "yes"))) {
+            const myExperience = document.createElement('div');
+            myExperience.classList.add("media", "stream-item", "exp-box");
+
+            const myMedia = document.createElement('div');
+            myMedia.classList.add("media-body");
+
+            const myDiv = document.createElement('div');
+            myDiv.classList.add("section-subheading", "article-title", "mb-0", "mt-0")
+            myMedia.appendChild(myDiv);
+
+            const myExperienceTitle = document.createElement('a');
+            myExperienceTitle.href = experience.link;
+            myExperienceTitle.target = "_blank";
+            myExperienceTitle.innerText = experience.title + " ";
+            myMedia.appendChild(myExperienceTitle);
+
+            const myExperienceCompany = document.createElement('div');
+            myExperienceCompany.classList.add("article-style");
+            myExperienceCompany.textContent = experience.company;
+            const myExperienceLocation = document.createElement('p');
+            myExperienceLocation.textContent = experience.location;
+            myExperienceCompany.appendChild(myExperienceLocation);
+            const myExperienceDate = document.createElement('p');
+            myExperienceDate.innerText = experience.date + " | " + experience.city;
+            myExperienceCompany.appendChild(myExperienceDate);
+            myMedia.appendChild(myExperienceCompany);
+
+            const myExperienceText = document.createElement('div');
+            myExperienceText.classList.add("article-style");
+            myExperienceText.textContent = experience.text;
+            myMedia.appendChild(myExperienceText);
+
+            myExperience.appendChild(myMedia);
+
+            sectionExperiences.appendChild(myExperience);
+        }
+    }
+}
+
+/* Function to populate the Recognitions section of the website. Looks for ID=recognitionCards */
+function populateRecognitions(obj) {
+    const sectionRecognitions = document.querySelector("#recognitionCards");
+
+    for (const recognition of obj.Recognitions) {
+        if ((!document.title.includes("Recognitions") && recognition.show == "main") || (document.title.includes("Recognitions") && (recognition.show == "main" || recognition.show == "yes"))) {
+            const myRecognition = document.createElement('div');
+            myRecognition.classList.add("card", "experience", "course");
+
+            const myCard = document.createElement('div');
+            myCard.classList.add("card-body");
+
+            const myDiv = document.createElement('div');
+            myDiv.classList.add("section-subheading", "card-title", "exp-title", "text-muted", "mt-0");
+            myDiv.innerText = recognition.title;
+            myCard.appendChild(myDiv);
+
+            const myKudoBody = document.createElement('div');
+            myKudoBody.classList.add("card-subtitle", "my-0", "article-metadata");
+
+            const myKudoOrg = document.createElement('a');
+            myKudoOrg.href = recognition.link;
+            myKudoOrg.target = "_blank";
+            myKudoOrg.innerText = recognition.organization + " ";
+            myKudoBody.appendChild(myKudoOrg);
+
+            const mySpan = document.createElement('span');
+            mySpan.classList.add("fa-solid", "fa-ellipsis-vertical");
+            myKudoBody.appendChild(mySpan);
+
+            const myDate = document.createElement('span');
+            myDate.innerText = " " + recognition.date;
+            myKudoBody.appendChild(myDate);
+
+            myCard.appendChild(myKudoBody);
+
+            myRecognition.appendChild(myCard);
+
+            sectionRecognitions.appendChild(myRecognition);
         }
     }
 }
