@@ -68,23 +68,20 @@ function renderSection() {
 
       // Handle 'authors' input specially
       if (key === "authors") {
-        // Convert authors to a comma-separated list of names
+        // Convert authors array to a comma-separated string for display
         input.value = item[key].map(author => author.name).join(", ");
         input.placeholder = "Enter authors, separated by commas";
       }
 
       input.oninput = () => {
         if (key === "authors") {
-          // Split the input by commas and preserve full names together
+          // Split the input by commas but preserve each name intact
           const authorsArray = input.value
             .split(",")
             .map(name => {
               const trimmedName = name.trim();
               if (trimmedName) {
-                const parts = trimmedName.split(" ");
-                const lastName = parts.pop();
-                const firstName = parts.join(" ");
-                return { name: `${firstName} ${lastName}`, title: "" };
+                return { name: trimmedName, title: "" }; // No splitting for parts of the name
               }
               return null;
             })
@@ -143,6 +140,8 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
+
 
 function moveItem(index, delta) {
   const sectionData = data[currentSection];
