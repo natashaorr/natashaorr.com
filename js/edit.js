@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.9
+// v3.0
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -52,6 +52,25 @@ function renderSection() {
     card.classList.add("card", "mb-3");
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
+
+    // Render the article title first
+    const articleGroup = document.createElement("div");
+    articleGroup.classList.add("mb-2");
+
+    const articleLabel = document.createElement("label");
+    articleLabel.innerText = "Article Title";
+    articleLabel.classList.add("form-label");
+    articleGroup.appendChild(articleLabel);
+
+    const articleInput = document.createElement("input");
+    articleInput.type = "text";
+    articleInput.classList.add("form-control");
+    articleInput.value = item.article; // Set the article title
+    articleInput.placeholder = "Article Title";
+
+    articleInput.oninput = () => item.article = articleInput.value; // Update article in data
+    articleGroup.appendChild(articleInput);
+    cardBody.appendChild(articleGroup);
 
     // Check if 'authors' exists and render it
     if (item.authors && Array.isArray(item.authors)) {
@@ -117,9 +136,9 @@ function renderSection() {
       cardBody.appendChild(authorsGroup);
     }
 
-    // Render other fields (article, year, etc.)
+    // Render other fields (year, journal, etc.)
     Object.entries(item).forEach(([key, value]) => {
-      if (key !== "authors") {
+      if (key !== "authors" && key !== "article") { // Exclude authors and article from here
         const group = document.createElement("div");
         group.classList.add("mb-2");
 
@@ -183,6 +202,7 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
 
 // Move Author in the list
 function moveAuthor(item, authorIndex, delta) {
