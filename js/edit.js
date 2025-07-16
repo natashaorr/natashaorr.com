@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.5
+// v2.6
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -53,6 +53,7 @@ function renderSection() {
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
 
+    // Handle different fields in the section data
     Object.entries(item).forEach(([key, value]) => {
       const group = document.createElement("div");
       group.classList.add("mb-2");
@@ -61,12 +62,12 @@ function renderSection() {
       label.innerText = key;
       label.classList.add("form-label");
 
-      // Check if 'authors' exists and is an array
+      // Check if the key is 'authors' and handle separately
       if (key === "authors" && Array.isArray(value)) {
         const authorContainer = document.createElement("div");
         authorContainer.classList.add("author-container");
 
-        // Render each author as a separate input field
+        // Render authors as individual input fields
         value.forEach((author, authorIndex) => {
           const authorGroup = document.createElement("div");
           authorGroup.classList.add("d-flex", "mb-2");
@@ -77,8 +78,8 @@ function renderSection() {
           authorInput.value = author.name;
           authorInput.placeholder = "Author Name";
 
+          // Update the authors array when the input changes
           authorInput.oninput = () => {
-            // Update the author name in the data array
             data[currentSection][index].authors[authorIndex].name = authorInput.value;
           };
 
@@ -86,9 +87,9 @@ function renderSection() {
           delBtn.classList.add("btn", "btn-sm", "btn-danger", "ms-2");
           delBtn.innerText = "Delete";
           delBtn.onclick = () => {
-            // Remove the author from the array
+            // Remove the author from the list
             data[currentSection][index].authors.splice(authorIndex, 1);
-            renderSection(); // Re-render the section after deletion
+            renderSection(); // Re-render the section
           };
 
           authorGroup.appendChild(authorInput);
@@ -96,21 +97,21 @@ function renderSection() {
           authorContainer.appendChild(authorGroup);
         });
 
-        // Add button to add a new author input
+        // Add button to add new author
         const addAuthorBtn = document.createElement("button");
         addAuthorBtn.classList.add("btn", "btn-outline-success", "mt-2");
         addAuthorBtn.innerText = "Add Author";
         addAuthorBtn.onclick = () => {
-          // Add a new empty author object to the list
+          // Add a new empty author
           data[currentSection][index].authors.push({ name: "", title: "" });
-          renderSection(); // Re-render to update the display
+          renderSection(); // Re-render to show changes
         };
 
         authorContainer.appendChild(addAuthorBtn);
         group.appendChild(label);
         group.appendChild(authorContainer);
       } else {
-        // Other fields are treated as regular text inputs
+        // Regular fields are handled as text inputs
         const input = document.createElement("input");
         input.type = "text";
         input.classList.add("form-control");
@@ -165,8 +166,6 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
-
-
 
 
 function moveItem(index, delta) {
