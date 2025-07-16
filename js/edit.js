@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.7
+// v2.8
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -53,70 +53,71 @@ function renderSection() {
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
 
-    // Handle fields and authors differently
-    Object.entries(item).forEach(([key, value]) => {
-      const group = document.createElement("div");
-      group.classList.add("mb-2");
+    // Check if 'authors' exists and render it
+    if (item.authors && Array.isArray(item.authors)) {
+      const authorsGroup = document.createElement("div");
+      authorsGroup.classList.add("mb-3");
 
-      const label = document.createElement("label");
-      label.innerText = key;
-      label.classList.add("form-label");
+      const authorsLabel = document.createElement("label");
+      authorsLabel.innerText = "Authors";
+      authorsLabel.classList.add("form-label");
+      authorsGroup.appendChild(authorsLabel);
 
-      // Check if the key is 'authors' and handle separately
-      if (key === "authors" && Array.isArray(value)) {
-        const authorContainer = document.createElement("div");
-        authorContainer.classList.add("author-container");
+      item.authors.forEach((author, authorIndex) => {
+        const authorGroup = document.createElement("div");
+        authorGroup.classList.add("d-flex", "mb-2");
 
-        // Render each author as a separate input field
-        value.forEach((author, authorIndex) => {
-          const authorGroup = document.createElement("div");
-          authorGroup.classList.add("d-flex", "mb-2");
-
-          const authorInput = document.createElement("input");
-          authorInput.type = "text";
-          authorInput.classList.add("form-control");
-          authorInput.value = author.name || "";  // Handle missing names
-          authorInput.placeholder = "Author Name";
-
-          // Update the authors array when the input changes
-          authorInput.oninput = () => {
-            data[currentSection][index].authors[authorIndex].name = authorInput.value;
-          };
-
-          const delBtn = document.createElement("button");
-          delBtn.classList.add("btn", "btn-sm", "btn-danger", "ms-2");
-          delBtn.innerText = "Delete";
-          delBtn.onclick = () => {
-            // Remove the author from the list
-            data[currentSection][index].authors.splice(authorIndex, 1);
-            renderSection(); // Re-render the section
-          };
-
-          authorGroup.appendChild(authorInput);
-          authorGroup.appendChild(delBtn);
-          authorContainer.appendChild(authorGroup);
-        });
-
-        // Add button to add new author
-        const addAuthorBtn = document.createElement("button");
-        addAuthorBtn.classList.add("btn", "btn-outline-success", "mt-2");
-        addAuthorBtn.innerText = "Add Author";
-        addAuthorBtn.onclick = () => {
-          // Add a new empty author
-          data[currentSection][index].authors.push({ name: "", title: "" });
-          renderSection(); // Re-render to show changes
+        const authorInput = document.createElement("input");
+        authorInput.type = "text";
+        authorInput.classList.add("form-control");
+        authorInput.value = author.name; // Set the author's name
+        authorInput.placeholder = "Author Name";
+        
+        authorInput.oninput = () => {
+          item.authors[authorIndex].name = authorInput.value; // Update author name in data
         };
 
-        authorContainer.appendChild(addAuthorBtn);
-        group.appendChild(label);
-        group.appendChild(authorContainer);
-      } else {
-        // Regular fields are handled as text inputs
+        const delBtn = document.createElement("button");
+        delBtn.classList.add("btn", "btn-sm", "btn-danger", "ms-2");
+        delBtn.innerText = "Delete";
+        delBtn.onclick = () => {
+          item.authors.splice(authorIndex, 1); // Remove the author
+          renderSection(); // Re-render the section after removal
+        };
+
+        authorGroup.appendChild(authorInput);
+        authorGroup.appendChild(delBtn);
+        authorsGroup.appendChild(authorGroup);
+      });
+
+      // Button to add new author
+      const addAuthorBtn = document.createElement("button");
+      addAuthorBtn.classList.add("btn", "btn-outline-success", "mt-2");
+      addAuthorBtn.innerText = "Add Author";
+      addAuthorBtn.onclick = () => {
+        item.authors.push({ name: "", title: "" }); // Add empty author
+        renderSection(); // Re-render the section after adding
+      };
+
+      authorsGroup.appendChild(addAuthorBtn);
+      cardBody.appendChild(authorsGroup);
+    }
+
+    // Render other fields (article, year, etc.)
+    Object.entries(item).forEach(([key, value]) => {
+      if (key !== "authors") {
+        const group = document.createElement("div");
+        group.classList.add("mb-2");
+
+        const label = document.createElement("label");
+        label.innerText = key;
+        label.classList.add("form-label");
+
         const input = document.createElement("input");
         input.type = "text";
         input.classList.add("form-control");
         input.value = value;
-        input.oninput = () => data[currentSection][index][key] = input.value;
+        input.oninput = () => item[key] = input.value;
 
         group.appendChild(label);
         group.appendChild(input);
@@ -124,6 +125,7 @@ function renderSection() {
       }
     });
 
+    // Append up, down, delete buttons
     const btnRow = document.createElement("div");
     btnRow.classList.add("d-flex", "justify-content-between", "pt-2");
 
@@ -153,6 +155,7 @@ function renderSection() {
     sectionContent.appendChild(card);
   });
 
+  // Add new item button
   const addBtn = document.createElement("button");
   addBtn.classList.add("btn", "btn-outline-success", "mt-3");
   addBtn.innerText = "Add New";
@@ -166,7 +169,6 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
-
 
 
 function moveItem(index, delta) {
