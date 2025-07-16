@@ -1,19 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Edit Natasha’s Website Data</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Details</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+    }
+    header {
+      background-color: #16324F;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    nav button {
+      padding: 0.5rem 1rem;
+      border: none;
+      background-color: #ddd;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    nav button.active {
+      background-color: #16324F;
+      color: white;
+    }
+    .item {
+      border-bottom: 1px solid #ccc;
+      padding: 1rem 0;
+    }
+    .item input,
+    .item textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .actions button {
+      background: #16324F;
+      color: white;
+      border: none;
+      padding: 0.4rem 0.7rem;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .actions button.delete {
+      background: crimson;
+    }
+    .controls {
+      text-align: right;
+      margin-top: 2rem;
+    }
+    .controls button {
+      background: #16324F;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
 </head>
-<body class="p-4">
-
+<body>
+  <header>
+    <h1>Edit Profile Details</h1>
+  </header>
   <div class="container">
-    <h1 class="mb-4">Edit Natasha’s Website Details</h1>
-    <div id="formContainer"></div>
-    <button id="downloadBtn" class="btn btn-primary mt-4">Download Updated JSON</button>
+    <nav id="sectionTabs"></nav>
+    <div id="editor"></div>
+    <div class="controls">
+      <button id="download">Download Updated JSON</button>
+    </div>
   </div>
-
   <script src="js/edit.js"></script>
 </body>
 </html>
