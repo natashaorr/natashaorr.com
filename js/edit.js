@@ -4,8 +4,9 @@ const sections = [
   "Interests", "Values", "Education", "Employment",
   "Publications", "Presentations", "Experiences", "Recognitions", "Citations"
 ];
-let currentSection = 0;
-let data = [];
+
+let currentSection = "Interests";
+let data = {};
 
 document.addEventListener("DOMContentLoaded", async () => {
   const response = await fetch("/js/json/details.json");
@@ -17,12 +18,14 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function initSectionTabs() {
   const tabContainer = document.getElementById("sectionTabs");
-  sections.forEach((section, index) => {
+  tabContainer.innerHTML = "";
+  sections.forEach((section) => {
     const btn = document.createElement("button");
     btn.innerText = section;
     btn.classList.add("btn", "btn-outline-primary", "m-1");
+    if (section === currentSection) btn.classList.add("active");
     btn.onclick = () => {
-      currentSection = index;
+      currentSection = section;
       renderSection();
     };
     tabContainer.appendChild(btn);
@@ -31,15 +34,19 @@ function initSectionTabs() {
 
 function renderSection() {
   const sectionTitle = document.getElementById("sectionTitle");
-  sectionTitle.textContent = sections[currentSection];
+  sectionTitle.textContent = currentSection;
   const sectionContent = document.getElementById("sectionContent");
   sectionContent.innerHTML = "";
 
   const sectionData = data[currentSection];
+  if (!Array.isArray(sectionData)) {
+    sectionContent.innerHTML = "<p>This section has no entries.</p>";
+    return;
+  }
+
   sectionData.forEach((item, index) => {
     const card = document.createElement("div");
     card.classList.add("card", "mb-3");
-
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
 
@@ -122,3 +129,4 @@ function downloadJSON() {
   a.click();
   URL.revokeObjectURL(url);
 }
+
