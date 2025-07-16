@@ -36,10 +36,10 @@ function renderSection() {
   const sectionTitle = document.getElementById("sectionTitle");
   sectionTitle.textContent = currentSection;
   const sectionContent = document.getElementById("sectionContent");
-  
+
   console.log("Current Section:", currentSection);
   console.log("Section Data", data[currentSection]);
-  
+
   sectionContent.innerHTML = "";
 
   const sectionData = data[currentSection];
@@ -66,7 +66,22 @@ function renderSection() {
       input.type = "text";
       input.classList.add("form-control");
       input.value = value;
-      input.oninput = () => data[currentSection][index][key] = input.value;
+
+      if (key === "authors") {
+        // If the key is "authors", we need to handle it as a comma-separated list
+        input.value = item[key].map(author => author.name).join(", "); // Display the names as a comma-separated string
+        input.placeholder = "Enter authors, separated by commas";
+      }
+
+      input.oninput = () => {
+        if (key === "authors") {
+          // Update authors list as a comma-separated string
+          const authorsArray = input.value.split(",").map(name => ({ name: name.trim(), title: "" }));
+          data[currentSection][index][key] = authorsArray;
+        } else {
+          data[currentSection][index][key] = input.value;
+        }
+      };
 
       group.appendChild(label);
       group.appendChild(input);
