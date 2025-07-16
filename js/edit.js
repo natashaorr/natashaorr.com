@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.3
+// v2.4
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -61,35 +61,65 @@ function renderSection() {
       label.innerText = key;
       label.classList.add("form-label");
 
-      const input = document.createElement("input");
-      input.type = "text";
-      input.classList.add("form-control");
-      input.value = value;
-
       // Handle 'authors' input specially
       if (key === "authors") {
-        // Convert authors array to a comma-separated string for display
-        input.value = item[key].map(author => author.name).join(", ");
-        input.placeholder = "Enter authors, separated by commas";
+        const authorContainer = document.createElement("div");
+        authorContainer.classList.add("author-container");
+
+        // Render each author as a separate input
+        item[key].forEach((author, authorIndex) => {
+          const authorGroup = document.createElement("div");
+          authorGroup.classList.add("d-flex", "mb-2");
+
+          const authorInput = document.createElement("input");
+          authorInput.type = "text";
+          authorInput.classList.add("form-control");
+          authorInput.value = author.name;
+          authorInput.placeholder = "Author Name";
+
+          authorInput.oninput = () => {
+            // Update the author name in the data array
+            data[currentSection][index].authors[authorIndex].name = authorInput.value;
+          };
+
+          const delBtn = document.createElement("button");
+          delBtn.classList.add("btn", "btn-sm", "btn-danger", "ms-2");
+          delBtn.innerText = "Delete";
+          delBtn.onclick = () => {
+            // Remove the author from the array
+            data[currentSection][index].authors.splice(authorIndex, 1);
+            renderSection(); // Re-render the section after deletion
+          };
+
+          authorGroup.appendChild(authorInput);
+          authorGroup.appendChild(delBtn);
+          authorContainer.appendChild(authorGroup);
+        });
+
+        // Add button to add a new author input
+        const addAuthorBtn = document.createElement("button");
+        addAuthorBtn.classList.add("btn", "btn-outline-success", "mt-2");
+        addAuthorBtn.innerText = "Add Author";
+        addAuthorBtn.onclick = () => {
+          // Add a new empty author object to the list
+          data[currentSection][index].authors.push({ name: "", title: "" });
+          renderSection(); // Re-render to update the display
+        };
+
+        authorContainer.appendChild(addAuthorBtn);
+        group.appendChild(label);
+        group.appendChild(authorContainer);
+      } else {
+        const input = document.createElement("input");
+        input.type = "text";
+        input.classList.add("form-control");
+        input.value = value;
+        input.oninput = () => data[currentSection][index][key] = input.value;
+
+        group.appendChild(label);
+        group.appendChild(input);
+        cardBody.appendChild(group);
       }
-
-      input.oninput = () => {
-        if (key === "authors") {
-          // Preserve the whole name as one string
-          const authorNames = input.value.split(",").map(name => name.trim()).filter(Boolean);  // Clean empty names
-
-          // Update authors as an array of objects
-          data[currentSection][index][key] = authorNames.map(name => {
-            return { name: name, title: "" }; // Only update the name, title remains blank
-          });
-        } else {
-          data[currentSection][index][key] = input.value;
-        }
-      };
-
-      group.appendChild(label);
-      group.appendChild(input);
-      cardBody.appendChild(group);
     });
 
     const btnRow = document.createElement("div");
@@ -134,6 +164,7 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
 
 
 
