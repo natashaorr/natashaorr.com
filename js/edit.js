@@ -8,7 +8,7 @@ let currentSection = 0;
 let data = [];
 
 document.addEventListener("DOMContentLoaded", async () => {
-  const response = await fetch("js/json/details.json");
+  const response = await fetch("/js/json/details.json");
   data = await response.json();
   initSectionTabs();
   renderSection();
