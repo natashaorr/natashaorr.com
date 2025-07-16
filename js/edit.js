@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.2
+// v2.3
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -75,19 +75,13 @@ function renderSection() {
 
       input.oninput = () => {
         if (key === "authors") {
-          // Split the input by commas but preserve each name intact
-          const authorsArray = input.value
-            .split(",")
-            .map(name => {
-              const trimmedName = name.trim();
-              if (trimmedName) {
-                return { name: trimmedName, title: "" }; // No splitting for parts of the name
-              }
-              return null;
-            })
-            .filter(Boolean); // Remove any empty names
+          // Preserve the whole name as one string
+          const authorNames = input.value.split(",").map(name => name.trim()).filter(Boolean);  // Clean empty names
 
-          data[currentSection][index][key] = authorsArray;
+          // Update authors as an array of objects
+          data[currentSection][index][key] = authorNames.map(name => {
+            return { name: name, title: "" }; // Only update the name, title remains blank
+          });
         } else {
           data[currentSection][index][key] = input.value;
         }
@@ -140,6 +134,7 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
 
 
 
