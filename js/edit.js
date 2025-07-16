@@ -1,7 +1,7 @@
 // edit.js
 
 const sections = [
-  "Interests", "Values", "Education", "Employment",
+  "Interests", "Values", "Schools", "Employers",
   "Publications", "Presentations", "Experiences", "Recognitions", "Citations"
 ];
 
