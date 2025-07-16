@@ -1,5 +1,5 @@
 [
-    { "interests":
+    { "Interests":
 
         [
             {
@@ -17,7 +17,7 @@
         ]
     },
 
-    { "values":
+    { "Values":
 
         [
             {
@@ -38,7 +38,7 @@
         ]
     },
 
-    { "schools":
+    { "Schools":
 
         [
             {
@@ -74,7 +74,7 @@
         ]
     },
 
-    { "employers":
+    { "Employers":
 
         [
             {
@@ -145,7 +145,7 @@
         ]
     },
 
-    { "publications":
+    { "Publications":
 
         [
             {
@@ -515,7 +515,7 @@
         ]
     },
 
-    { "presentations":
+    { "Presentations":
 
         [
             {
@@ -641,7 +641,7 @@
         ]
     },
 
-    { "experiences":
+    { "Experiences":
 
         [
             {
@@ -743,7 +743,7 @@
         ]
     },
 
-    { "recognitions":
+    { "Recognitions":
 
         [
             {
@@ -806,7 +806,7 @@
         ]
     },
 
-    { "citations":
+    { "Citations":
 
         [
             {
