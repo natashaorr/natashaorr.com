@@ -36,6 +36,10 @@ function renderSection() {
   const sectionTitle = document.getElementById("sectionTitle");
   sectionTitle.textContent = currentSection;
   const sectionContent = document.getElementById("sectionContent");
+  
+  console.log("Current Section:", currentSection);
+  console.log("Section Data", data[currentSection]);
+  
   sectionContent.innerHTML = "";
 
   const sectionData = data[currentSection];
