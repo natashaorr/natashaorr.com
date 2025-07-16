@@ -37,9 +37,6 @@ function renderSection() {
   sectionTitle.textContent = currentSection;
   const sectionContent = document.getElementById("sectionContent");
 
-  console.log("Current Section:", currentSection);
-  console.log("Section Data", data[currentSection]);
-
   sectionContent.innerHTML = "";
 
   const sectionData = data[currentSection];
@@ -68,15 +65,22 @@ function renderSection() {
       input.value = value;
 
       if (key === "authors") {
-        // If the key is "authors", we need to handle it as a comma-separated list
+        // Handle authors as comma-separated list
         input.value = item[key].map(author => author.name).join(", "); // Display the names as a comma-separated string
         input.placeholder = "Enter authors, separated by commas";
       }
 
       input.oninput = () => {
         if (key === "authors") {
-          // Update authors list as a comma-separated string
-          const authorsArray = input.value.split(",").map(name => ({ name: name.trim(), title: "" }));
+          // Split the authors by commas and remove extra spaces
+          const authorsArray = input.value
+            .split(",")
+            .map(name => {
+              const parts = name.trim().split(" ");
+              const lastName = parts.pop();
+              const firstName = parts.join(" ");
+              return { name: `${firstName} ${lastName}`, title: "" };
+            });
           data[currentSection][index][key] = authorsArray;
         } else {
           data[currentSection][index][key] = input.value;
@@ -130,6 +134,7 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
 
 function moveItem(index, delta) {
   const sectionData = data[currentSection];
