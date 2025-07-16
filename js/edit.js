@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.4
+// v2.5
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -61,13 +61,13 @@ function renderSection() {
       label.innerText = key;
       label.classList.add("form-label");
 
-      // Handle 'authors' input specially
-      if (key === "authors") {
+      // Check if 'authors' exists and is an array
+      if (key === "authors" && Array.isArray(value)) {
         const authorContainer = document.createElement("div");
         authorContainer.classList.add("author-container");
 
-        // Render each author as a separate input
-        item[key].forEach((author, authorIndex) => {
+        // Render each author as a separate input field
+        value.forEach((author, authorIndex) => {
           const authorGroup = document.createElement("div");
           authorGroup.classList.add("d-flex", "mb-2");
 
@@ -110,6 +110,7 @@ function renderSection() {
         group.appendChild(label);
         group.appendChild(authorContainer);
       } else {
+        // Other fields are treated as regular text inputs
         const input = document.createElement("input");
         input.type = "text";
         input.classList.add("form-control");
@@ -164,7 +165,6 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
-
 
 
 
