@@ -1,5 +1,7 @@
 // edit.js
 
+// v2.0
+
 const sections = [
   "Interests", "Values", "Schools", "Employers",
   "Publications", "Presentations", "Experiences", "Recognitions", "Citations"
@@ -65,22 +67,28 @@ function renderSection() {
       input.value = value;
 
       if (key === "authors") {
-        // Handle authors as comma-separated list
-        input.value = item[key].map(author => author.name).join(", "); // Display the names as a comma-separated string
+        // Convert authors to a comma-separated list of names, for display purposes
+        input.value = item[key].map(author => author.name).join(", ");
         input.placeholder = "Enter authors, separated by commas";
       }
 
       input.oninput = () => {
         if (key === "authors") {
-          // Split the authors by commas and remove extra spaces
+          // Split the input by commas but make sure to keep full names together
           const authorsArray = input.value
             .split(",")
             .map(name => {
-              const parts = name.trim().split(" ");
-              const lastName = parts.pop();
-              const firstName = parts.join(" ");
-              return { name: `${firstName} ${lastName}`, title: "" };
-            });
+              const trimmedName = name.trim();
+              if (trimmedName) {
+                const parts = trimmedName.split(" ");
+                const lastName = parts.pop();
+                const firstName = parts.join(" ");
+                return { name: `${firstName} ${lastName}`, title: "" };
+              }
+              return null;
+            })
+            .filter(Boolean); // Remove any empty names
+
           data[currentSection][index][key] = authorsArray;
         } else {
           data[currentSection][index][key] = input.value;
@@ -134,6 +142,7 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
 
 
 function moveItem(index, delta) {
