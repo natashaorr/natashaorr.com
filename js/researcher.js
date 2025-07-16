@@ -4,7 +4,7 @@ Created: April 2023
 Updated: July 2025
 */
 
-// v2.2
+// v2.3
 
 
 /* Constants */
@@ -15,6 +15,12 @@ const request = new Request(requestURL);
 /* Initial function to trigger all calls. */
 function populate() {
     populateDetails();
+}
+
+function todayDate() {
+    var d = new Date();
+    var n = d.getFullYear() + "  ";
+    return document.getElementById("date").innerHTML = n;
 }
 
 /* Main function to retrieve json with details for the website */
@@ -182,6 +188,69 @@ function populateEducation(obj) {
             myEducation.appendChild(myDegrees);
 
             sectionEducation.appendChild(myEducation);
+        }
+    }
+}
+
+/* Function to populate the Publications section of the website. Looks for ID=publicationCards */
+function populatePublications(obj) {
+    const sectionPublications = document.querySelector("#publicationCards");
+    const citations = obj.Citations; // update here to use Citations directly from the new structure
+
+    for (const publication of obj.Publications) {
+        if ((!document.title.includes("Publications") && publication.show == "main") || 
+            (document.title.includes("Publications") && (publication.show == "main" || publication.show == "yes"))) {
+            const myPublication = document.createElement('div');
+            myPublication.classList.add("pub-list-item");
+
+            const myPubIcon = document.createElement('i');
+            myPubIcon.classList.add("far", "fa-file-alt", "pub-icon");
+            myPublication.appendChild(myPubIcon);
+
+            const mySpanClass = document.createElement('span');
+            mySpanClass.classList.add("article-metadata", "li-cite-author");
+            myPublication.appendChild(mySpanClass);
+
+            let count = 0;
+            const maxCount = publication.authors.length;
+
+            for (const author of publication.authors) {
+                count++;
+                const mySpan = document.createElement('span');
+                let boldName = author.name;
+
+                if (count === maxCount) {
+                    boldName = boldName + " ";
+                } else {
+                    boldName = boldName + "; ";
+                }
+
+                if (boldName.includes(keyAuthor)) {
+                    const myBold = document.createElement('b');
+                    myBold.textContent = boldName;
+                    mySpan.appendChild(myBold);
+                } else {
+                    mySpan.textContent = boldName;
+                }
+
+                myPublication.appendChild(mySpan);
+            }
+
+            const myYear = document.createElement('a');
+            myYear.textContent = " (" + publication.year + "). ";
+            myPublication.appendChild(myYear);
+
+            const myPub = document.createElement('a');
+            myPub.href = publication.article_link;
+            myPub.target = "_blank";
+            myPub.innerText = publication.article + " ";
+            myPublication.appendChild(myPub);
+
+            const myNewEm = document.createElement('em');
+            myNewEm.textContent = publication.journal;
+            myPublication.appendChild(myNewEm);
+
+            sectionPublications.appendChild(myPublication);
         }
     }
 }
