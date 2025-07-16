@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.0
+// v2.1
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
