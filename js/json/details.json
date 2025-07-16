@@ -1,994 +1,939 @@
-[
-    { "Interests":
-
-        [
-            {
-                "title":"Endometriosis Research"
-            },
-
-            {
-                "title":"Patient-Oriented Research"
-            },
-
-            {
-                "title":"Women's Health Education"
-            }
+{ 
+    "Interests": [
+        { "title":"Endometriosis Research" },
+        { "title":"Patient-Oriented Research" },
+        { "title":"Women's Health Education" }
     
-        ]
-    },
-
-    { "Values":
-
-        [
-            {
-                "title":"Enthusiasm",
-                "icon": "fa-heart-circle-exclamation"
-            },
-
-            {
-                "title":"Collaboration",
-                "icon":"fa-handshake"
-            },
-
-            {
-                "title":"Respect",
-                "icon":"fa-hand-holding-heart"
-            }
+    ],
+    "Values": [
+        { "title":"Enthusiasm", "icon": "fa-heart-circle-exclamation" },
+        { "title":"Collaboration", "icon":"fa-handshake" },
+        { "title":"Respect", "icon":"fa-hand-holding-heart" }
     
-        ]
-    },
+    ],
+     "Schools": [
+        {
+            "degree":"PhD - Reproductive and Developmental Sciences",
+            "facility": "University of British Columbia",
+            "date":"May 2018 - Aug 2022",
+            "city": "Vancouver",
+            "link":"",
+            "text":"<i>Thesis Title:</i> Central Sensitization and Somatic Activating <i>KRAS</i> Mutations in Endometriosis-Associated Pain.",
+            "show": "main"
+        },
 
-    { "Schools":
+        {
+            "degree":"MSc - Reproductive and Developmental Sciences",
+            "facility": "University of British Columbia",
+            "date":"Jun 2016 - May 2018",
+            "city": "Vancouver",
+            "link":"",
+            "text":"<i>Thesis Title:</i> Central Sensitization in Endometriosis-Associated Deep Dyspareunia.",
+            "show": "main"
+        },
 
-        [
-            {
-                "degree":"PhD - Reproductive and Developmental Sciences",
-                "facility": "University of British Columbia",
-                "date":"May 2018 - Aug 2022",
-                "city": "Vancouver",
-                "link":"",
-                "text":"<i>Thesis Title:</i> Central Sensitization and Somatic Activating <i>KRAS</i> Mutations in Endometriosis-Associated Pain.",
-                "show": "main"
+        {
+            "degree":"BSc - Honours Life Sciences, Biomedical Science",
+            "facility": "Queen's University",
+            "date":"Sep 2012 - May 2016",
+            "city": "Kingston",
+            "link":"",
+            "text":"",
+            "show": "main"
+        }
+
+    ],
+    "Employers": [
+        {
+            "title":"Postdoctoral Researcher",
+            "company": "School of Nursing",
+            "date":"Sep 2022 - Present",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"",
+            "current":"yes",
+            "show": "main"
+        },
+
+        {
+            "title":"Graduate Research Assistant",
+            "company": "Endometriosis and Pelvic Pain Laboratory",
+            "date":"Jun 2016 – Aug 2022",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"",
+            "current":"no",
+            "show": "main"
+        },
+
+        {
+            "title":"Course Moderator",
+            "company": "MD Undergraduate Program",
+            "date":"Sep 2020 – Apr 2021",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"",
+            "current":"no",
+            "show": "main"
+        },
+
+        {
+            "title":"Histology Teaching Assistant (1st and 2nd Year UBC Medical Students)",
+            "company": "MD Undergraduate Program",
+            "date":"Aug 2016 – Apr 2021",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"",
+            "current":"no",
+            "show": "main"
+        },
+
+        {
+            "title":"Research Assistant (Reproductive and Developmental Sciences Laboratory)",
+            "company": "Biomedical and Molecular Sciences",
+            "date":"Sep 2015 – Apr 2016",
+            "location":"Queen's University",
+            "city": "Kingston",
+            "link":"",
+            "current":"no",
+            "show": "main"
+        },
+
+        {
+            "title":"Research Assistant (Neuroanatomy Laboratory)",
+            "company": "Biomedical and Molecular Sciences",
+            "date":"Sep 2012 – Apr 2015",
+            "location":"Queen's University",
+            "city": "Kingston",
+            "link":"",
+            "current":"no",
+            "show": "main"
+        }
+    ],
+    "Publications": [
+        {
+            "article":"Association  of Central Sensitization Inventory Scores with Pain Outcomes After Endometriosis Surgery",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Huang, AJ", "title":""},
+                {"name":"Liu, YD", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Williams, C", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2023",
+            "journal":"JAMA Network Open",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36848090/",
+            "pmid":"36848090",
+            "show" : "main"
+        },
+
+        {
+            "article":"KRAS  Mutation and Greater Burden of Disease in Endometriosis",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Albert, A", "title":""},
+                {"name":"Liu, YD", "title":""},
+                {"name":"Lum, A", "title":""},
+                {"name":"Hong, J", "title":""},
+                {"name":"Ionescu, CL", "title":""},
+                {"name":"Senz, J", "title":""},
+                {"name":"Nazeran, TM", "title":""},
+                {"name":"Lee, AF", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Lawrenson, K", "title":""},
+                {"name":"Williams, C", "title":""},        
+                {"name":"Allaire, C", "title":""},        
+                {"name":"Bedaiwy, MA", "title":""},    
+                {"name":"Anglesio, MS", "title":""},    
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2023",
+            "journal":"Journal of Pathology: Clinical Research",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36977195/",
+            "pmid":"36977195",
+            "show" : "main"
+        },
+        
+        {
+            "article":"Central  Sensitization Inventory in Endometriosis",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Lisonek, M", "title":""},
+                {"name":"Joannou, A", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Albert, A", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Williams, C", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2022",
+            "journal":"PAIN",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/34030173/",
+            "pmid":"34030173",
+            "show" : "main"
+        },
+
+        {
+            "article":"Single-cell Transcriptomic Analysis of Endometriosis",
+            "authors":[
+                {"name":"Fonseca, MA", "title":""},
+                {"name":"Haro, M", "title":""},
+                {"name":"Wright, KN", "title":""},
+                {"name":"Lin, X", "title":""},
+                {"name":"Abbasi, F", "title":""},
+                {"name":"Sun, J", "title":""},
+                {"name":"Hernandez, L", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Hong, J", "title":""},
+                {"name":"Choi-Kuaea, Y", "title":""},
+                {"name":"Maluf, HM", "title":""},
+                {"name":"Balzer, BL", "title":""},
+                {"name":"Fishburn, A", "title":""},
+                {"name":"Hickey, R", "title":""},
+                {"name":"Cass, I", "title":""},
+                {"name":"Goodridge, HS", "title":""},
+                {"name":"Truong, M", "title":""},
+                {"name":"Wang, Y", "title":""},
+                {"name":"Pisarska, MD", "title":""},
+                {"name":"Dinh, H", "title":""},
+                {"name":"El-Naggar, A", "title":""},
+                {"name":"Huntsman, D", "title":""},
+                {"name":"Anglesio, MS", "title":""},
+                {"name":"Goodman, MT", "title":""},
+                {"name":"Medeiros, F", "title":""},
+                {"name":"Siedhoff, M", "title":""},
+                {"name":"Lawrenson, K", "title":""}
+            ],
+            "year":"2023",
+            "journal":"Nature Genetics",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36624343/",
+            "pmid":"36624343",
+            "show" : "yes"
+        },
+
+        {
+            "article":"Ohnut Versus  a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
+            "authors":[
+                {"name":"Zhang, S", "title":""},
+                {"name":"MacLeod, R", "title":""},
+                {"name":"Parmar, G", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Albert, A", "title":""},
+                {"name":"Flannigan, R", "title":""},
+                {"name":"Brotto, L", "title":""},
+                {"name":"Yong, P", "title":""}
+            ],
+            "year":"2023",
+            "journal":"JMIR Research Protocols",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/36972117/",
+            "pmid":"36972117",
+            "show" : "main"
+        },
+
+        {
+            "article":"Endometriosis in Canada: It Is Time for Collaboration to Advance Patient-Oriented, Evidence-Based Policy, Care, and Research",
+            "authors":[
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Yong, PJ", "title":""},
+                {"name":"Bridge Cook, P", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"EndoAct Canada", "title":"I am a member of EndoAct Canada"} 
+            ],
+            "year":"2021",
+            "journal":"Journal of Obstetrics and Gynecology Canada",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/32753352/",
+            "pmid":"32753352",
+            "show" : "yes"                              
+        },
+
+        {
+            "article":"Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
+            "authors":[
+                {"name":"Orr, NL", "title":"Co-first author"},
+                {"name":"Wahl, KJ", "title":"Co-first author"},
+                {"name":"Joannou, A", "title":""},
+                {"name":"Hartmann, D", "title":""}, 
+                {"name":"Valle, L", "title":""}, 
+                {"name":"Yong, PJ", "title":""},
+            {"name":"ISSWSH Special Interest Group on Sexual Pain", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Sexual Medicine Reviews",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/30928249/",
+            "pmid":"30928249",
+            "show" : "yes"      
+        },
+
+        {
+            "article":"A Quantitative Analysis of Sleep Quality in Women with Endometriosis",
+            "authors":[
+                {"name":"Arion, K", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Allaire, C", "title":""},
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Journal of Women's Health",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/32176592/",
+            "pmid":"32176592",
+            "show" : "yes"      
+        },
+
+        {
+            "article":"Endometriosis and Negative Perception of the Medical Profession",
+            "authors":[
+                {"name":"Ng, N", "title":""},
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Allaire, C", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Journal of Obstetrics and Gynecology Canada",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/31864912/",
+            "pmid":"31864912",
+            "show" : "yes"     
+        },
+
+        {
+            "article":"Deep Dyspareunia, Superficial Dyspareunia, and Infertility Concerns Among Women with Endometriosis: A Cross-Sectional Study",
+            "authors":[
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Lisonek, M", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Allaire, C", "title":""},
+                {"name":"Albert, A", "title":""}, 
+                {"name":"Smith, KB", "title":""}, 
+                {"name":"Cox, S", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Sexual Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/32061579/",
+            "pmid":"32061579",
+            "show" : "yes"     
+        },
+
+        {
+            "article":"Phenotyping Sexual Pain in Endometriosis using the Central Sensitization Inventory",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Wahl, KJ", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Allaire, C", "title":""},
+                {"name":"Williams, C", "title":""}, 
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Albert, A", "title":""}, 
+                {"name":"Smith, KB", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2020",
+            "journal":"Journal of Sexual Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/31983669/",
+            "pmid":"31983669",
+            "show" : "yes"   
+        },
+
+        {
+            "article":"Plasminogen Activator Inhibitor-1 (PAI-1) Expression in Endometriosis",
+            "authors":[
+                {"name":"Alotaibi, F", "title":""},
+                {"name":"Peng, B", "title":""},
+                {"name":"Klausen, C", "title":""},
+                {"name":"Lee, A", "title":""},
+                {"name":"Abdelkareem, A", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2019",
+            "journal":"PLoS One",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/31315131/",
+            "pmid":"31315131",
+            "show" : "yes"  
+        },
+
+        {
+            "article":"Iatrogenic Endometriosis Harbors Somatic Cancer-Driver Mutations",
+            "authors":[
+                {"name":"Lac, V", "title":""},
+                {"name":"Verhoef, L", "title":""},
+                {"name":"Aguirre-Hernandez, R", "title":""},
+                {"name":"Nazeran, TM", "title":""},
+                {"name":"Tessier-Cloutier, B", "title":""},
+                {"name":"Praetorius, T", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Lum, A", "title":""},
+                {"name":"Khattra, J", "title":""}, 
+                {"name":"Prentice, LM", "title":""}, 
+                {"name":"Co, D", "title":""}, 
+                {"name":"Kobel, M", "title":""}, 
+                {"name":"Mijatovic, V", "title":""}, 
+                {"name":"Lee, AF", "title":""}, 
+                {"name":"Pasternak, J", "title":""}, 
+                {"name":"Bleeker, MC", "title":""}, 
+                {"name":"Kraemer, B", "title":""}, 
+                {"name":"Brucker, SY", "title":""}, 
+                {"name":"Kommoss, F", "title":""}, 
+                {"name":"Kommoss, S", "title":""}, 
+                {"name":"Horlings, HM", "title":""}, 
+                {"name":"Yong, PJ", "title":""},
+                {"name":"Huntsman, DG", "title":""}, 
+                {"name":"Anglesio, MS", "title":""} 
+            ],
+            "year":"2019",
+            "journal":"Human Reproduction",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/30428062/",
+            "pmid":"30428062",
+            "show" : "yes"  
+        },
+
+        {
+            "article":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
+            "authors":[
+                {"name":"Orr, NL", "title":""},
+                {"name":"Noga, H", "title":""},
+                {"name":"Williams, C", "title":""},
+                {"name":"Allaire, C", "title":""}, 
+                {"name":"Bedaiwy, MA", "title":""}, 
+                {"name":"Lisonkova, S", "title":""},
+                {"name":"Smith, KB", "title":""},
+                {"name":"Yong, PJ", "title":""}
+            ],
+            "year":"2018",
+            "journal":"Journal of Sexual Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/30078464/",
+            "pmid":"30078464",
+            "show" : "yes" 
+        },
+
+        {
+            "article":"Cancer-Associated Mutations in Endometriosis without Cancer",
+            "authors":[
+                {"name":"Anglesio, MS", "title":""},
+                {"name":"Papadopoulos, N", "title":""},
+                {"name":"Ayhan, A", "title":""},
+                {"name":"Nazeran, TM", "title":""},
+                {"name":"Noe, M", "title":""},
+                {"name":"Horlings, HM", "title":""},
+                {"name":"Lum, A", "title":""},
+                {"name":"Jones, S", "title":""},
+                {"name":"Senz, J", "title":""},
+                {"name":"Seckin, T", "title":""},
+                {"name":"Ho, J", "title":""},
+                {"name":"Wu, RC", "title":""},
+                {"name":"Lac, V", "title":""},
+                {"name":"Ogawa, H", "title":""},
+                {"name":"Tessier-Cloutier, B", "title":""},
+                {"name":"Alhassan, R", "title":""},
+                {"name":"Wang, A", "title":""},
+                {"name":"Wang, Y", "title":""},
+                {"name":"Cohen, JD", "title":""},
+                {"name":"Wong, F", "title":""},
+                {"name":"Hasanovic, A", "title":""},
+                {"name":"Orr, NL", "title":""},
+                {"name":"Zhang, M", "title":""},
+                {"name":"Popoli, M", "title":""},
+                {"name":"McMahon, W", "title":""},
+                {"name":"Wood, LD", "title":""},
+                {"name":"Mattox, A", "title":""},
+                {"name":"Allaire, C", "title":""},
+                {"name":"Segars, J", "title":""},
+                {"name":"Williams, C", "title":""},
+                {"name":"Tomasetti, C", "title":""},
+                {"name":"Boyd, N", "title":""},
+                {"name":"Kinzler, KW", "title":""},
+                {"name":"Gilks, CB", "title":""},
+                {"name":"Diaz, L", "title":""},
+                {"name":"Wang, TL", "title":""},
+                {"name":"Vogelstein, B", "title":""},
+                {"name":"Yong, PJ", "title":""},
+                {"name":"Huntsman, DG", "title":""},
+                {"name":"Shih, IM", "title":""}      
+            ],
+            "year":"2017",
+            "journal":"New England Journal of Medicine",
+            "article_link":"https://pubmed.ncbi.nlm.nih.gov/28489996/",
+            "pmid":"28489996",
+            "show" : "yes" 
+        }
+    ],
+    "Presentations": [
+        {
+        "conference":"14th World Congress on Endometriosis",
+        "title":"Somatic Cancer-Driver Mutations and Sexual Pain Phenotype in Endometriosis",
+        "type" :"Poster",            
+        "date":"2021",
+        "location":"Virtual",
+        "notes":"",
+        "link":"https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/",
+        "show":"main"
             },
-
-            {
-                "degree":"MSc - Reproductive and Developmental Sciences",
-                "facility": "University of British Columbia",
-                "date":"Jun 2016 - May 2018",
-                "city": "Vancouver",
-                "link":"",
-                "text":"<i>Thesis Title:</i> Central Sensitization in Endometriosis-Associated Deep Dyspareunia.",
-                "show": "main"
+        {
+        "conference":"Public Scholars Initiative PhD Go Public",
+        "title":"The Role of Central Sensitization in Endometriosis-associated Deep Dyspareunia",
+        "type" :"Oral",            
+        "date":"2019",
+        "location":"Vancouver",
+        "notes":"",
+        "link":"https://www.grad.ubc.ca/psi",
+        "show":"yes"
             },
-
-            {
-                "degree":"BSc - Honours Life Sciences, Biomedical Science",
-                "facility": "Queen's University",
-                "date":"Sep 2012 - May 2016",
-                "city": "Kingston",
-                "link":"",
-                "text":"",
-                "show": "main"
+        {
+        "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
+        "title":"The Central Sensitization Inventory in Women with Endometriosis",
+        "type" :"Oral",            
+        "date":"2019",
+        "location":"Ottawa",
+        "notes":"Best Abstract in the Field of Pain",
+        "link":"https://cansage.org/",
+        "show":"main"
+            },
+        {
+        "conference":"UBC Obstetrics and Gynecology 19th Annual Academic Day",
+        "title":"Central Sensitization and Endometriosis-Associated Painful Sex",
+        "type" :"Oral",            
+        "date":"2019",
+        "location":"Vancouver",
+        "notes":"",
+        "link":"https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/",
+        "show":"yes"
+            },
+        {
+        "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
+        "title":"Let's Talk About (Painful) Sex!",
+        "type" :"Oral (Symposium)",            
+        "date":"2019",
+        "location":"Toronto",
+        "notes":"",
+        "link":"https://www.canadianpainsociety.ca/",
+        "show":"main"
+            },
+        {
+        "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
+        "title":"Central Sensitization Inventory in Endometriosis-Associated Pain",
+        "type" :"Oral",            
+        "date":"2019",
+        "location":"Toronto",
+        "notes":"Sole Oral Presenter Invited for the Endometriosis Session",
+        "link":"https://www.pelvicpain.org/",
+        "show":"main"
+            },
+        {
+        "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
+        "title":"Increased Central Sensitization Among Women with Painful Bladder Syndrome and Deep Dyspareunia",
+        "type" :"Poster",            
+        "date":"2019",
+        "location":"Atlanta",
+        "notes":"",
+        "link":"https://www.isswsh.org/",
+        "show":"yes"
+            },
+        {
+        "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
+        "title":"Increased Central Sensitization in Women with Chronic Pelvic Pain and Painful Bladder Syndrome",
+        "type" :"Poster",            
+        "date":"2019",
+        "location":"Toronto",
+        "notes":"",
+        "link":"https://www.canadianpainsociety.ca/",
+        "show":"yes"
+            },
+        {
+        "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
+        "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
+        "type" :"Oral",            
+        "date":"2018",
+        "location":"San Diego",
+        "notes":"",
+        "link":"https://www.isswsh.org/",
+        "show":"yes"
+            },
+        {
+        "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
+        "title":"Deep Dyspareunia and Central Sensitization in Women with Endometriosis",
+        "type" :"Poster",            
+        "date":"2018",
+        "location":"Chicago",
+        "notes":"",
+        "link":"https://www.pelvicpain.org/",
+        "show":"yes"
+            },
+        {
+        "conference":"UBC Obstetrics and Gynecology 18th Annual Academic Day",
+        "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
+        "type" :"Oral",            
+        "date":"2018",
+        "location":"Vancouver",
+        "notes":"",
+        "link":"https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/",
+        "show":"yes"
+            },
+        {
+        "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
+        "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
+        "type" :"Oral",            
+        "date":"2018",
+        "location":"Banff",
+        "notes":"Runner-Up Best Oral E-Poster Presentation",
+        "link":"https://cansage.org/",
+        "show":"yes"
             }
-    
-        ]
-    },
+    ],
+    "Experiences": [
+        {
+            "title":"VP Communications",
+            "company": "Postdoctoral Association",
+            "date":"Sep 2022 - Present",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"https://blogs.ubc.ca/ubcpda/",
+            "text":"I lead the communications for this organization including developing the communication strategy, promoting postdoc events, as well as curating and disseminating news via social media channels and a monthly newsletter.",
+            "show": "main"
+        },
+        {
+            "title":"Committee Member",
+            "company": "EndoAct Canada",
+            "date":"Sep 2019 - Present",
+            "location":"",
+            "city": "Canada",
+            "link":"https://endoact.ca/members/",
+            "text":"I am a researcher member and serve as the secretary of EndoAct Canada. I have moderated public events including an EndoAct town hall event and the #ActOnEndo toolkit launch event. I also coordinate meetings between local endometriosis advocates, their Members of Parliament and EndoAct.",
+            "show": "main"
+        },
+        {
+            "title":"Peer Mentor",
+            "company": "Faculty of Medicine Peer Mentorship Program",
+            "date":"Sep 2020 - May 2021",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"https://grad-postdoc.med.ubc.ca/current-students/student-wellbeing/peer-mentorship-program/peer-mentorship-training/",
+            "text":"Supported a junior graduate student through their transition into graduate school. I helped them apply to teaching and research assistantships, as well as develop connections and access resources on campus.",
+            "show": "main"
+        },
 
-    { "Employers":
+        {
+            "title":"Instructor",
+            "company": "Vancouver Summer Program - Obstetrics and Gynecology",
+            "date":"Jul 2019",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"https://vancouversummerprogram.ubc.ca/course-packages/medicine/",
+            "text":"Presented a lecture on endometriosis and a lecture on the histology of the female reproductive system. Also, developed an afternoon interactive lab session on histology.",
+            "show": "main"
+        },
 
-        [
-            {
-                "title":"Postdoctoral Researcher",
-                "company": "School of Nursing",
-                "date":"Sep 2022 - Present",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"",
-                "current":"yes",
-                "show": "main"
-            },
+        {
+            "title":"Guest Lecturer",
+            "company": "Cellular and Physiological Sciences",
+            "date":"Sep 10, 2019 – Dec 31, 2022",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"https://cps.med.ubc.ca/",
+            "text":"Taught the urinary and respiratory units for the course: Introduction to Microscopic Human Anatomy (CAPS390).",
+            "show": "main"
+        },
 
-            {
-                "title":"Graduate Research Assistant",
-                "company": "Endometriosis and Pelvic Pain Laboratory",
-                "date":"Jun 2016 – Aug 2022",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"",
-                "current":"no",
-                "show": "main"
-            },
+        {
+            "title":"Workshop Leader",
+            "company": "Mini Med School, BC Children's Hospital Research Institute",
+            "date":"May 2019",
+            "location":"University of British Columbia",
+            "city": "Kamloops and Williams Lake",
+            "link":"https://www.bcchr.ca/events/mini-med-school",
+            "text":"Conducted a hands-on workshop session on laparoscopic surgery for high school students.",
+            "show": "main"
+        },
 
-            {
-                "title":"Course Moderator",
-                "company": "MD Undergraduate Program",
-                "date":"Sep 2020 – Apr 2021",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"",
-                "current":"no",
-                "show": "main"
-            },
+        {
+            "title":"Workshop Leader",
+            "company": "Quantum Leaps Conference",
+            "date":"Apr 2019",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"https://quantumleapsvan.wordpress.com/home/",
+            "text":"Described my research experience as a women in a STEM field to a group of female high school students, and ran a hands-on histology lab demonstration.",
+            "show": "main"
+        },
 
-            {
-                "title":"Histology Teaching Assistant (1st and 2nd Year UBC Medical Students)",
-                "company": "MD Undergraduate Program",
-                "date":"Aug 2016 – Apr 2021",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"",
-                "current":"no",
-                "show": "main"
-            },
+        {
+            "title":"Research Experience (REX) Mentor",
+            "company": "Undergraduate Research Opportunities",
+            "date":"Sep 2016 - Apr 2021",
+            "location":"University of British Columbia",
+            "city": "Vancouver",
+            "link":"https://www.uroubc.com/rex-mentors/",
+            "text":"Provided undergraduate students at UBC with advice and support as they create a research project and poster to present at the Multidisciplinary Undergraduate Research Conference.",
+            "show": "main"
+        },
 
-            {
-                "title":"Research Assistant (Reproductive and Developmental Sciences Laboratory)",
-                "company": "Biomedical and Molecular Sciences",
-                "date":"Sep 2015 – Apr 2016",
-                "location":"Queen's University",
-                "city": "Kingston",
-                "link":"",
-                "current":"no",
-                "show": "main"
-            },
-
-            {
-                "title":"Research Assistant (Neuroanatomy Laboratory)",
-                "company": "Biomedical and Molecular Sciences",
-                "date":"Sep 2012 – Apr 2015",
-                "location":"Queen's University",
-                "city": "Kingston",
-                "link":"",
-                "current":"no",
-                "show": "main"
-            }
-        ]
-    },
-
-    { "Publications":
-
-        [
-            {
-                "article":"Association  of Central Sensitization Inventory Scores with Pain Outcomes After Endometriosis Surgery",
-                "authors":[
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Huang, AJ", "title":""},
-                    {"name":"Liu, YD", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Williams, C", "title":""},
-                    {"name":"Allaire, C", "title":""}, 
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2023",
-                "journal":"JAMA Network Open",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/36848090/",
-                "pmid":"36848090",
-                "show" : "main"
-            },
-
-            {
-                "article":"KRAS  Mutation and Greater Burden of Disease in Endometriosis",
-                "authors":[
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Albert, A", "title":""},
-                    {"name":"Liu, YD", "title":""},
-                    {"name":"Lum, A", "title":""},
-                    {"name":"Hong, J", "title":""},
-                    {"name":"Ionescu, CL", "title":""},
-                    {"name":"Senz, J", "title":""},
-                    {"name":"Nazeran, TM", "title":""},
-                    {"name":"Lee, AF", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Lawrenson, K", "title":""},
-                    {"name":"Williams, C", "title":""},        
-                    {"name":"Allaire, C", "title":""},        
-                    {"name":"Bedaiwy, MA", "title":""},    
-                    {"name":"Anglesio, MS", "title":""},    
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2023",
-                "journal":"Journal of Pathology: Clinical Research",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/36977195/",
-                "pmid":"36977195",
-                "show" : "main"
-            },
-            
-            {
-                "article":"Central  Sensitization Inventory in Endometriosis",
-                "authors":[
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Wahl, KJ", "title":""},
-                    {"name":"Lisonek, M", "title":""},
-                    {"name":"Joannou, A", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Albert, A", "title":""},
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Williams, C", "title":""},
-                    {"name":"Allaire, C", "title":""}, 
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2022",
-                "journal":"PAIN",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/34030173/",
-                "pmid":"34030173",
-                "show" : "main"
-            },
-
-            {
-                "article":"Single-cell Transcriptomic Analysis of Endometriosis",
-                "authors":[
-                    {"name":"Fonseca, MA", "title":""},
-                    {"name":"Haro, M", "title":""},
-                    {"name":"Wright, KN", "title":""},
-                    {"name":"Lin, X", "title":""},
-                    {"name":"Abbasi, F", "title":""},
-                    {"name":"Sun, J", "title":""},
-                    {"name":"Hernandez, L", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Hong, J", "title":""},
-                    {"name":"Choi-Kuaea, Y", "title":""},
-                    {"name":"Maluf, HM", "title":""},
-                    {"name":"Balzer, BL", "title":""},
-                    {"name":"Fishburn, A", "title":""},
-                    {"name":"Hickey, R", "title":""},
-                    {"name":"Cass, I", "title":""},
-                    {"name":"Goodridge, HS", "title":""},
-                    {"name":"Truong, M", "title":""},
-                    {"name":"Wang, Y", "title":""},
-                    {"name":"Pisarska, MD", "title":""},
-                    {"name":"Dinh, H", "title":""},
-                    {"name":"El-Naggar, A", "title":""},
-                    {"name":"Huntsman, D", "title":""},
-                    {"name":"Anglesio, MS", "title":""},
-                    {"name":"Goodman, MT", "title":""},
-                    {"name":"Medeiros, F", "title":""},
-                    {"name":"Siedhoff, M", "title":""},
-                    {"name":"Lawrenson, K", "title":""}
-                ],
-                "year":"2023",
-                "journal":"Nature Genetics",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/36624343/",
-                "pmid":"36624343",
-                "show" : "yes"
-            },
-
-            {
-                "article":"Ohnut Versus  a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
-                "authors":[
-                    {"name":"Zhang, S", "title":""},
-                    {"name":"MacLeod, R", "title":""},
-                    {"name":"Parmar, G", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Wahl, KJ", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Albert, A", "title":""},
-                    {"name":"Flannigan, R", "title":""},
-                    {"name":"Brotto, L", "title":""},
-                    {"name":"Yong, P", "title":""}
-                ],
-                "year":"2023",
-                "journal":"JMIR Research Protocols",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/36972117/",
-                "pmid":"36972117",
-                "show" : "main"
-            },
-
-            {
-                "article":"Endometriosis in Canada: It Is Time for Collaboration to Advance Patient-Oriented, Evidence-Based Policy, Care, and Research",
-                "authors":[
-                    {"name":"Wahl, KJ", "title":""},
-                    {"name":"Yong, PJ", "title":""},
-                    {"name":"Bridge Cook, P", "title":""},
-                    {"name":"Allaire, C", "title":""}, 
-                    {"name":"EndoAct Canada", "title":"I am a member of EndoAct Canada"} 
-                ],
-                "year":"2021",
-                "journal":"Journal of Obstetrics and Gynecology Canada",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/32753352/",
-                "pmid":"32753352",
-                "show" : "yes"                              
-            },
-
-            {
-                "article":"Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
-                "authors":[
-                    {"name":"Orr, NL", "title":"Co-first author"},
-                    {"name":"Wahl, KJ", "title":"Co-first author"},
-                    {"name":"Joannou, A", "title":""},
-                    {"name":"Hartmann, D", "title":""}, 
-                    {"name":"Valle, L", "title":""}, 
-                    {"name":"Yong, PJ", "title":""},
-                {"name":"ISSWSH Special Interest Group on Sexual Pain", "title":""}
-                ],
-                "year":"2020",
-                "journal":"Sexual Medicine Reviews",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/30928249/",
-                "pmid":"30928249",
-                "show" : "yes"      
-            },
-
-            {
-                "article":"A Quantitative Analysis of Sleep Quality in Women with Endometriosis",
-                "authors":[
-                    {"name":"Arion, K", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Allaire, C", "title":""},
-                    {"name":"Williams, C", "title":""}, 
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2020",
-                "journal":"Journal of Women's Health",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/32176592/",
-                "pmid":"32176592",
-                "show" : "yes"      
-            },
-
-            {
-                "article":"Endometriosis and Negative Perception of the Medical Profession",
-                "authors":[
-                    {"name":"Ng, N", "title":""},
-                    {"name":"Wahl, KJ", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Williams, C", "title":""}, 
-                    {"name":"Allaire, C", "title":""},
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2020",
-                "journal":"Journal of Obstetrics and Gynecology Canada",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/31864912/",
-                "pmid":"31864912",
-                "show" : "yes"     
-            },
-
-            {
-                "article":"Deep Dyspareunia, Superficial Dyspareunia, and Infertility Concerns Among Women with Endometriosis: A Cross-Sectional Study",
-                "authors":[
-                    {"name":"Wahl, KJ", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Lisonek, M", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Williams, C", "title":""}, 
-                    {"name":"Allaire, C", "title":""},
-                    {"name":"Albert, A", "title":""}, 
-                    {"name":"Smith, KB", "title":""}, 
-                    {"name":"Cox, S", "title":""}, 
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2020",
-                "journal":"Sexual Medicine",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/32061579/",
-                "pmid":"32061579",
-                "show" : "yes"     
-            },
-
-            {
-                "article":"Phenotyping Sexual Pain in Endometriosis using the Central Sensitization Inventory",
-                "authors":[
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Wahl, KJ", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Allaire, C", "title":""},
-                    {"name":"Williams, C", "title":""}, 
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Albert, A", "title":""}, 
-                    {"name":"Smith, KB", "title":""}, 
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2020",
-                "journal":"Journal of Sexual Medicine",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/31983669/",
-                "pmid":"31983669",
-                "show" : "yes"   
-            },
-
-            {
-                "article":"Plasminogen Activator Inhibitor-1 (PAI-1) Expression in Endometriosis",
-                "authors":[
-                    {"name":"Alotaibi, F", "title":""},
-                    {"name":"Peng, B", "title":""},
-                    {"name":"Klausen, C", "title":""},
-                    {"name":"Lee, A", "title":""},
-                    {"name":"Abdelkareem, A", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2019",
-                "journal":"PLoS One",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/31315131/",
-                "pmid":"31315131",
-                "show" : "yes"  
-            },
-
-            {
-                "article":"Iatrogenic Endometriosis Harbors Somatic Cancer-Driver Mutations",
-                "authors":[
-                    {"name":"Lac, V", "title":""},
-                    {"name":"Verhoef, L", "title":""},
-                    {"name":"Aguirre-Hernandez, R", "title":""},
-                    {"name":"Nazeran, TM", "title":""},
-                    {"name":"Tessier-Cloutier, B", "title":""},
-                    {"name":"Praetorius, T", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Lum, A", "title":""},
-                    {"name":"Khattra, J", "title":""}, 
-                    {"name":"Prentice, LM", "title":""}, 
-                    {"name":"Co, D", "title":""}, 
-                    {"name":"Kobel, M", "title":""}, 
-                    {"name":"Mijatovic, V", "title":""}, 
-                    {"name":"Lee, AF", "title":""}, 
-                    {"name":"Pasternak, J", "title":""}, 
-                    {"name":"Bleeker, MC", "title":""}, 
-                    {"name":"Kraemer, B", "title":""}, 
-                    {"name":"Brucker, SY", "title":""}, 
-                    {"name":"Kommoss, F", "title":""}, 
-                    {"name":"Kommoss, S", "title":""}, 
-                    {"name":"Horlings, HM", "title":""}, 
-                    {"name":"Yong, PJ", "title":""},
-                    {"name":"Huntsman, DG", "title":""}, 
-                    {"name":"Anglesio, MS", "title":""} 
-                ],
-                "year":"2019",
-                "journal":"Human Reproduction",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/30428062/",
-                "pmid":"30428062",
-                "show" : "yes"  
-            },
-
-            {
-                "article":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-                "authors":[
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Noga, H", "title":""},
-                    {"name":"Williams, C", "title":""},
-                    {"name":"Allaire, C", "title":""}, 
-                    {"name":"Bedaiwy, MA", "title":""}, 
-                    {"name":"Lisonkova, S", "title":""},
-                    {"name":"Smith, KB", "title":""},
-                    {"name":"Yong, PJ", "title":""}
-                ],
-                "year":"2018",
-                "journal":"Journal of Sexual Medicine",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/30078464/",
-                "pmid":"30078464",
-                "show" : "yes" 
-            },
-
-            {
-                "article":"Cancer-Associated Mutations in Endometriosis without Cancer",
-                "authors":[
-                    {"name":"Anglesio, MS", "title":""},
-                    {"name":"Papadopoulos, N", "title":""},
-                    {"name":"Ayhan, A", "title":""},
-                    {"name":"Nazeran, TM", "title":""},
-                    {"name":"Noe, M", "title":""},
-                    {"name":"Horlings, HM", "title":""},
-                    {"name":"Lum, A", "title":""},
-                    {"name":"Jones, S", "title":""},
-                    {"name":"Senz, J", "title":""},
-                    {"name":"Seckin, T", "title":""},
-                    {"name":"Ho, J", "title":""},
-                    {"name":"Wu, RC", "title":""},
-                    {"name":"Lac, V", "title":""},
-                    {"name":"Ogawa, H", "title":""},
-                    {"name":"Tessier-Cloutier, B", "title":""},
-                    {"name":"Alhassan, R", "title":""},
-                    {"name":"Wang, A", "title":""},
-                    {"name":"Wang, Y", "title":""},
-                    {"name":"Cohen, JD", "title":""},
-                    {"name":"Wong, F", "title":""},
-                    {"name":"Hasanovic, A", "title":""},
-                    {"name":"Orr, NL", "title":""},
-                    {"name":"Zhang, M", "title":""},
-                    {"name":"Popoli, M", "title":""},
-                    {"name":"McMahon, W", "title":""},
-                    {"name":"Wood, LD", "title":""},
-                    {"name":"Mattox, A", "title":""},
-                    {"name":"Allaire, C", "title":""},
-                    {"name":"Segars, J", "title":""},
-                    {"name":"Williams, C", "title":""},
-                    {"name":"Tomasetti, C", "title":""},
-                    {"name":"Boyd, N", "title":""},
-                    {"name":"Kinzler, KW", "title":""},
-                    {"name":"Gilks, CB", "title":""},
-                    {"name":"Diaz, L", "title":""},
-                    {"name":"Wang, TL", "title":""},
-                    {"name":"Vogelstein, B", "title":""},
-                    {"name":"Yong, PJ", "title":""},
-                    {"name":"Huntsman, DG", "title":""},
-                    {"name":"Shih, IM", "title":""}      
-                ],
-                "year":"2017",
-                "journal":"New England Journal of Medicine",
-                "article_link":"https://pubmed.ncbi.nlm.nih.gov/28489996/",
-                "pmid":"28489996",
-                "show" : "yes" 
-            }
-        ]
-    },
-
-    { "Presentations":
-
-        [
-            {
-            "conference":"14th World Congress on Endometriosis",
-            "title":"Somatic Cancer-Driver Mutations and Sexual Pain Phenotype in Endometriosis",
-            "type" :"Poster",            
+        {
+            "title":"Teaching Assistant",
+            "company": "Faculty of Health Sciences",
+            "date":"Sep 2014 - Apr 2016",
+            "location":"Queen's University",
+            "city": "Kingston",
+            "link":"https://healthsci.queensu.ca/",
+            "text":"Teaching Assistant for a course entitled: The Principles of Human Morphology II (ANAT215).",
+            "show": "main"
+        }
+    ],
+    "Recognitions": [
+        {
+            "title":"Rising Star Certificate of Excellence",
+            "organization":"Canadian Association of Medical Education",
+            "date":"2022",
+            "link":"https://www.came-acem.ca/awards/came-rising-star-certificate-of-excellence/",
+        "show":"main"
+        },
+        {
+            "title":"Faculty of Medicine Killam Graduate Teaching Assistant Award",
+            "organization":"University of British Columbia",
             "date":"2021",
-            "location":"Virtual",
-            "notes":"",
-            "link":"https://endometriosis.ca/14th-world-congress-on-endometriosis-wce2020/",
-            "show":"main"
-                },
-            {
-            "conference":"Public Scholars Initiative PhD Go Public",
-            "title":"The Role of Central Sensitization in Endometriosis-associated Deep Dyspareunia",
-            "type" :"Oral",            
-            "date":"2019",
-            "location":"Vancouver",
-            "notes":"",
-            "link":"https://www.grad.ubc.ca/psi",
-            "show":"yes"
-                },
-            {
-            "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
-            "title":"The Central Sensitization Inventory in Women with Endometriosis",
-            "type" :"Oral",            
-            "date":"2019",
-            "location":"Ottawa",
-            "notes":"Best Abstract in the Field of Pain",
-            "link":"https://cansage.org/",
-            "show":"main"
-                },
-            {
-            "conference":"UBC Obstetrics and Gynecology 19th Annual Academic Day",
-            "title":"Central Sensitization and Endometriosis-Associated Painful Sex",
-            "type" :"Oral",            
-            "date":"2019",
-            "location":"Vancouver",
-            "notes":"",
-            "link":"https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/",
-            "show":"yes"
-                },
-            {
-            "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
-            "title":"Let's Talk About (Painful) Sex!",
-            "type" :"Oral (Symposium)",            
-            "date":"2019",
-            "location":"Toronto",
-            "notes":"",
-            "link":"https://www.canadianpainsociety.ca/",
-            "show":"main"
-                },
-            {
-            "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
-            "title":"Central Sensitization Inventory in Endometriosis-Associated Pain",
-            "type" :"Oral",            
-            "date":"2019",
-            "location":"Toronto",
-            "notes":"Sole Oral Presenter Invited for the Endometriosis Session",
-            "link":"https://www.pelvicpain.org/",
-            "show":"main"
-                },
-            {
-            "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
-            "title":"Increased Central Sensitization Among Women with Painful Bladder Syndrome and Deep Dyspareunia",
-            "type" :"Poster",            
-            "date":"2019",
-            "location":"Atlanta",
-            "notes":"",
-            "link":"https://www.isswsh.org/",
-            "show":"yes"
-                },
-            {
-            "conference":"Canadian Pain Society's 40th Annual Scientific Meeting",
-            "title":"Increased Central Sensitization in Women with Chronic Pelvic Pain and Painful Bladder Syndrome",
-            "type" :"Poster",            
-            "date":"2019",
-            "location":"Toronto",
-            "notes":"",
-            "link":"https://www.canadianpainsociety.ca/",
-            "show":"yes"
-                },
-            {
-            "conference":"International Society for the Study of Women's Sexual Health Annual Meeting",
+            "link":"https://grad-postdoc.med.ubc.ca/killam-graduate-teaching-assistant-awards/",
+        "show":"main"
+        },
+        {
+            "title":"Li Tze Fong Memorial Fellowship",
+            "organization":"University of British Columbia",
+            "date":"2020-2021",
+            "link":"https://www.grad.ubc.ca/",
+        "show":"main"
+        },
+        {
+            "title":"Cordula and Gunter Paetzold Fellowship",
+            "organization":"University of British Columbia",
+            "date":"2019-2020",
+            "link":"https://www.grad.ubc.ca/",
+        "show":"main"
+        },
+        {
+            "title":"Four Year Doctoral Fellowship and Tuition Award",
+            "organization":"University of British Columbia",
+            "date":"2019-2022",
+            "link":"https://www.grad.ubc.ca/",
+        "show":"main"
+        },
+        {
+            "title":"Simons Foundation Doctoral Scholarship",
+            "organization":"University of British Columbia",
+            "date":"2018",
+            "link":"https://www.grad.ubc.ca/",
+        "show":"main"
+        },
+        {
+            "title":"Outstanding Achievement Award for a Masters Student",
+            "organization":"BC Children's Hospital Research Institute",
+            "date":"2018",
+            "link":"https://www.bcchr.ca/",
+        "show":"main"
+        },
+        {
+            "title":"Canadian Graduate Scholarship - Masters",
+            "organization":"Canadian Institutes of Health Research",
+            "date":"2017-2018",
+            "link":"https://cihr-irsc.gc.ca/e/193.html",
+        "show":"main"
+        }
+
+    ],
+    "Citations": [
+        {
+            "type": "ARTICLE",
+            "pmid": "36848090",
+            "title": "Association of Central Sensitization Inventory Scores With Pain Outcomes After Endometriosis Surgery",
+            "author": "Orr NL, Huang AJ, Liu YD, Noga H, Bedaiwy MA, Williams C, Allaire C, Yong PJ",
+            "journal": "JAMA Network Open",
+            "year": "2023",
+            "volume": "6",
+            "issue": "2",
+            "pages": "e230780"
+        },
+        
+        {
+            "type": "ARTICLE",
+            "pmid":"36977195",
+            "title":"KRAS  Mutation and Greater Burden of Disease in Endometriosis",
+            "author": "Orr NL, Albert A, Liu YD, Lum A, Hong J, Ionescu CL, Senz J, Nazeran TM, Lee AF, Noga H, Lawrenson K, Williams C, Allaire C, Bedaiwy MA, Anglesio MS, Yong, PJ",
+            "journal":"Journal of Pathology: Clinical Research",
+            "year":"2023",
+            "volume": null,
+            "issue": null,
+            "pages": null
+        },
+        
+        {
+            "type": "ARTICLE",
+            "pmid": "34030173",
+            "title": "Central  Sensitization Inventory in Endometriosis",
+            "author": "Orr NL, Wahl KJ, Lisonek M, Joannou A, Noga H, Albert A, Bedaiwy MA, Williams C, Allaire C, Yong PJ",
+            "journal":"PAIN",
+            "year":"2022",
+            "volume": "163",
+            "issue": "2",
+            "pages": "e234-e245"
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "36624343",
+            "title": "Single-cell Transcriptomic Analysis of Endometriosis",
+            "author": "Fonseca MA, Haro M, Wright KN, Lin X, Abbasi F, Sun J, Hernandez L, Orr NL, Hong J, Choi-Kuaea Y, Maluf HM, Balzer BL, Fishburn A, Hickey R, Cass I, Goodridge HS, Truong M, Wang Y, Pisarska MD, Dinh H, El-Naggar A, Huntsman D, Anglesio MS, Goodman MT, Medeiros F, Siedhoff M, Lawrenson K",
+            "journal":"Nature Genetics",
+            "year":"2023",
+            "volume": "55",
+            "issue": "2",
+            "pages": "255-267"
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid":"36972117",
+            "title":"Ohnut Versus a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
+            "author": "Zhang SXJ, MacLeod RGK, Parmar G, Orr NL, Wahl KJ, Noga, H, Albert A, Flannigan R, Brotto LA, Yong PJ",
+            "journal":"JMIR Research Protocols",
+            "year":"2023",
+            "volume": "12",
+            "issue": null,
+            "pages": "e39834"
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "32753352",
+            "title": "Endometriosis in Canada: It Is Time for Collaboration to Advance Patient-Oriented, Evidence-Based Policy, Care, and Research",
+            "author": "Wahl KJ, Yong PJ, Bridge-Cook P, Allaire C, EndoAct Canada", 
+            "journal":"Journal of Obstetrics and Gynecology Canada",
+            "year":"2021",
+            "volume": "43",
+            "issue": "1",
+            "pages": "88-90"                      
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "30928249",
+            "title": "Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
+            "author": "Orr NL, Wahl KJ, Joannou A, Hartmann D, Valle L, Yong PJ",
+            "journal":"Sexual Medicine Reviews",
+            "year":"2020",
+            "volume": "8",
+            "issue": "1",
+            "pages": "3-17"      
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "32176592",             
+            "title": "A Quantitative Analysis of Sleep Quality in Women with Endometriosis",
+            "author": "Arion K, Orr NL, Noga H, Allaire C, Williams C, Bedaiwy MA, Yong PJ",
+            "journal":"Journal of Women's Health",
+            "year":"2020",
+            "volume": "29",
+            "issue": "9",
+            "pages": "1209-1215"           
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "31864912",
+            "title": "Endometriosis and Negative Perception of the Medical Profession",
+            "author": "Ng N, Wahl KJ, Orr NL, Noga H, Williams C, Allaire C, Bedaiwy MA, Yong PJ",
+            "journal":"Journal of Obstetrics and Gynecology Canada",
+            "year":"2020",
+            "volume": "42",
+            "issue": "3",
+            "pages": "248-255"     
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "32061579",
+            "title": "Deep Dyspareunia, Superficial Dyspareunia, and Infertility Concerns Among Women with Endometriosis: A Cross-Sectional Study",
+            "author": "Wahl KJ, Orr NL, Lisonek M, Noga H, Bedaiwy MA, Williams C, Allaire C, Albert A, Smith KB, Cox S, Yong PJ",
+            "journal":"Sexual Medicine",
+            "year":"2020",
+            "volume": "8",
+            "issue": "2",
+            "pages": "274-281"     
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "31983669",
+            "title": "Phenotyping Sexual Pain in Endometriosis using the Central Sensitization Inventory",
+            "author": "Orr NL, Wahl KJ, Noga H, Allaire C, Williams C, Bedaiwy MA, Albert A, Smith KB, Yong PJ",
+            "journal":"Journal of Sexual Medicine",
+            "year":"2020",
+            "volume": "17",
+            "issue": "4",
+            "pages": "761-770"      
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid":"31315131",
+            "title": "Plasminogen Activator Inhibitor-1 (PAI-1) Expression in Endometriosis",
+            "author": "Alotaibi FT, Peng B, Klausen C, Lee AF, Abdelkareem AO, Orr NL, Noga H, Bedaiwy MA, Yong PJ",
+            "journal":"PLoS One",
+            "year":"2019",
+            "volume": "14",
+            "issue": "7",
+            "pages": "e0219064"      
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "30428062",
+            "title": "Iatrogenic Endometriosis Harbors Somatic Cancer-Driver Mutations",
+            "author":"Lac V, Verhoef L, Aguirre-Hernandez R, Nazeran TM, Tessier-Cloutier B, Praetorius T, Orr NL, Noga H, Lum A, Khattra J, Prentice LM, Co D, Kobel M, Mijatovic V, Lee AF, Pasternak J, Bleeker MC, Kraemer B, Brucker SY, Kommoss F, Kommoss S, Horlings HM, Yong PJ, Huntsman DG, Anglesio MS",  
+            "journal":"Human Reproduction",
+            "year":"2019",
+            "volume": "34",
+            "issue": "1",
+            "pages": "69-78"     
+        },
+
+        {
+            "type": "ARTICLE",
+            "pmid": "30078464",
             "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-            "type" :"Oral",            
-            "date":"2018",
-            "location":"San Diego",
-            "notes":"",
-            "link":"https://www.isswsh.org/",
-            "show":"yes"
-                },
-            {
-            "conference":"International Pelvic Pain Society Annual Scientific Meeting on Pelvic Pain",
-            "title":"Deep Dyspareunia and Central Sensitization in Women with Endometriosis",
-            "type" :"Poster",            
-            "date":"2018",
-            "location":"Chicago",
-            "notes":"",
-            "link":"https://www.pelvicpain.org/",
-            "show":"yes"
-                },
-            {
-            "conference":"UBC Obstetrics and Gynecology 18th Annual Academic Day",
-            "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-            "type" :"Oral",            
-            "date":"2018",
-            "location":"Vancouver",
-            "notes":"",
-            "link":"https://obgyn.ubc.ca/faculty-resources/professional-development/academic-day/",
-            "show":"yes"
-                },
-            {
-            "conference":"Canadian Society for the Advancement of Gynecologic Excellence",
-            "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-            "type" :"Oral",            
-            "date":"2018",
-            "location":"Banff",
-            "notes":"Runner-Up Best Oral E-Poster Presentation",
-            "link":"https://cansage.org/",
-            "show":"yes"
-                }
-        ]
-    },
+            "author": "Orr NL, Noga H, Williams C, Allaire C, Bedaiwy MA, Lisonkova S, Smith KB, Yong PJ",
+            "journal":"Journal of Sexual Medicine",
+            "year":"2018",
+            "volume": "15",
+            "issue": "8",
+            "pages": "1158-1166"    
+        },
 
-    { "Experiences":
-
-        [
-            {
-                "title":"VP Communications",
-                "company": "Postdoctoral Association",
-                "date":"Sep 2022 - Present",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"https://blogs.ubc.ca/ubcpda/",
-                "text":"I lead the communications for this organization including developing the communication strategy, promoting postdoc events, as well as curating and disseminating news via social media channels and a monthly newsletter.",
-                "show": "main"
-            },
-            {
-                "title":"Committee Member",
-                "company": "EndoAct Canada",
-                "date":"Sep 2019 - Present",
-                "location":"",
-                "city": "Canada",
-                "link":"https://endoact.ca/members/",
-                "text":"I am a researcher member and serve as the secretary of EndoAct Canada. I have moderated public events including an EndoAct town hall event and the #ActOnEndo toolkit launch event. I also coordinate meetings between local endometriosis advocates, their Members of Parliament and EndoAct.",
-                "show": "main"
-            },
-            {
-                "title":"Peer Mentor",
-                "company": "Faculty of Medicine Peer Mentorship Program",
-                "date":"Sep 2020 - May 2021",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"https://grad-postdoc.med.ubc.ca/current-students/student-wellbeing/peer-mentorship-program/peer-mentorship-training/",
-                "text":"Supported a junior graduate student through their transition into graduate school. I helped them apply to teaching and research assistantships, as well as develop connections and access resources on campus.",
-                "show": "main"
-            },
-
-            {
-                "title":"Instructor",
-                "company": "Vancouver Summer Program - Obstetrics and Gynecology",
-                "date":"Jul 2019",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"https://vancouversummerprogram.ubc.ca/course-packages/medicine/",
-                "text":"Presented a lecture on endometriosis and a lecture on the histology of the female reproductive system. Also, developed an afternoon interactive lab session on histology.",
-                "show": "main"
-            },
-
-            {
-                "title":"Guest Lecturer",
-                "company": "Cellular and Physiological Sciences",
-                "date":"Sep 10, 2019 – Dec 31, 2022",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"https://cps.med.ubc.ca/",
-                "text":"Taught the urinary and respiratory units for the course: Introduction to Microscopic Human Anatomy (CAPS390).",
-                "show": "main"
-            },
-
-            {
-                "title":"Workshop Leader",
-                "company": "Mini Med School, BC Children's Hospital Research Institute",
-                "date":"May 2019",
-                "location":"University of British Columbia",
-                "city": "Kamloops and Williams Lake",
-                "link":"https://www.bcchr.ca/events/mini-med-school",
-                "text":"Conducted a hands-on workshop session on laparoscopic surgery for high school students.",
-                "show": "main"
-            },
-
-            {
-                "title":"Workshop Leader",
-                "company": "Quantum Leaps Conference",
-                "date":"Apr 2019",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"https://quantumleapsvan.wordpress.com/home/",
-                "text":"Described my research experience as a women in a STEM field to a group of female high school students, and ran a hands-on histology lab demonstration.",
-                "show": "main"
-            },
-
-            {
-                "title":"Research Experience (REX) Mentor",
-                "company": "Undergraduate Research Opportunities",
-                "date":"Sep 2016 - Apr 2021",
-                "location":"University of British Columbia",
-                "city": "Vancouver",
-                "link":"https://www.uroubc.com/rex-mentors/",
-                "text":"Provided undergraduate students at UBC with advice and support as they create a research project and poster to present at the Multidisciplinary Undergraduate Research Conference.",
-                "show": "main"
-            },
-
-            {
-                "title":"Teaching Assistant",
-                "company": "Faculty of Health Sciences",
-                "date":"Sep 2014 - Apr 2016",
-                "location":"Queen's University",
-                "city": "Kingston",
-                "link":"https://healthsci.queensu.ca/",
-                "text":"Teaching Assistant for a course entitled: The Principles of Human Morphology II (ANAT215).",
-                "show": "main"
-            }
-        ]
-    },
-
-    { "Recognitions":
-
-        [
-            {
-                "title":"Rising Star Certificate of Excellence",
-                "organization":"Canadian Association of Medical Education",
-                "date":"2022",
-                "link":"https://www.came-acem.ca/awards/came-rising-star-certificate-of-excellence/",
-            "show":"main"
-            },
-            {
-                "title":"Faculty of Medicine Killam Graduate Teaching Assistant Award",
-                "organization":"University of British Columbia",
-                "date":"2021",
-                "link":"https://grad-postdoc.med.ubc.ca/killam-graduate-teaching-assistant-awards/",
-            "show":"main"
-            },
-            {
-                "title":"Li Tze Fong Memorial Fellowship",
-                "organization":"University of British Columbia",
-                "date":"2020-2021",
-                "link":"https://www.grad.ubc.ca/",
-            "show":"main"
-            },
-            {
-                "title":"Cordula and Gunter Paetzold Fellowship",
-                "organization":"University of British Columbia",
-                "date":"2019-2020",
-                "link":"https://www.grad.ubc.ca/",
-            "show":"main"
-            },
-            {
-                "title":"Four Year Doctoral Fellowship and Tuition Award",
-                "organization":"University of British Columbia",
-                "date":"2019-2022",
-                "link":"https://www.grad.ubc.ca/",
-            "show":"main"
-            },
-            {
-                "title":"Simons Foundation Doctoral Scholarship",
-                "organization":"University of British Columbia",
-                "date":"2018",
-                "link":"https://www.grad.ubc.ca/",
-            "show":"main"
-            },
-            {
-                "title":"Outstanding Achievement Award for a Masters Student",
-                "organization":"BC Children's Hospital Research Institute",
-                "date":"2018",
-                "link":"https://www.bcchr.ca/",
-            "show":"main"
-            },
-            {
-                "title":"Canadian Graduate Scholarship - Masters",
-                "organization":"Canadian Institutes of Health Research",
-                "date":"2017-2018",
-                "link":"https://cihr-irsc.gc.ca/e/193.html",
-            "show":"main"
-            }
-
-        ]
-    },
-
-    { "Citations":
-
-        [
-            {
-                "type": "ARTICLE",
-                "pmid": "36848090",
-                "title": "Association of Central Sensitization Inventory Scores With Pain Outcomes After Endometriosis Surgery",
-                "author": "Orr NL, Huang AJ, Liu YD, Noga H, Bedaiwy MA, Williams C, Allaire C, Yong PJ",
-                "journal": "JAMA Network Open",
-                "year": "2023",
-                "volume": "6",
-                "issue": "2",
-                "pages": "e230780"
-            },
-            
-            {
-                "type": "ARTICLE",
-                "pmid":"36977195",
-                "title":"KRAS  Mutation and Greater Burden of Disease in Endometriosis",
-                "author": "Orr NL, Albert A, Liu YD, Lum A, Hong J, Ionescu CL, Senz J, Nazeran TM, Lee AF, Noga H, Lawrenson K, Williams C, Allaire C, Bedaiwy MA, Anglesio MS, Yong, PJ",
-                "journal":"Journal of Pathology: Clinical Research",
-                "year":"2023",
-                "volume": null,
-                "issue": null,
-                "pages": null
-            },
-            
-            {
-                "type": "ARTICLE",
-                "pmid": "34030173",
-                "title": "Central  Sensitization Inventory in Endometriosis",
-                "author": "Orr NL, Wahl KJ, Lisonek M, Joannou A, Noga H, Albert A, Bedaiwy MA, Williams C, Allaire C, Yong PJ",
-                "journal":"PAIN",
-                "year":"2022",
-                "volume": "163",
-                "issue": "2",
-                "pages": "e234-e245"
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "36624343",
-                "title": "Single-cell Transcriptomic Analysis of Endometriosis",
-                "author": "Fonseca MA, Haro M, Wright KN, Lin X, Abbasi F, Sun J, Hernandez L, Orr NL, Hong J, Choi-Kuaea Y, Maluf HM, Balzer BL, Fishburn A, Hickey R, Cass I, Goodridge HS, Truong M, Wang Y, Pisarska MD, Dinh H, El-Naggar A, Huntsman D, Anglesio MS, Goodman MT, Medeiros F, Siedhoff M, Lawrenson K",
-                "journal":"Nature Genetics",
-                "year":"2023",
-                "volume": "55",
-                "issue": "2",
-                "pages": "255-267"
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid":"36972117",
-                "title":"Ohnut Versus a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
-                "author": "Zhang SXJ, MacLeod RGK, Parmar G, Orr NL, Wahl KJ, Noga, H, Albert A, Flannigan R, Brotto LA, Yong PJ",
-                "journal":"JMIR Research Protocols",
-                "year":"2023",
-                "volume": "12",
-                "issue": null,
-                "pages": "e39834"
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "32753352",
-                "title": "Endometriosis in Canada: It Is Time for Collaboration to Advance Patient-Oriented, Evidence-Based Policy, Care, and Research",
-                "author": "Wahl KJ, Yong PJ, Bridge-Cook P, Allaire C, EndoAct Canada", 
-                "journal":"Journal of Obstetrics and Gynecology Canada",
-                "year":"2021",
-                "volume": "43",
-                "issue": "1",
-                "pages": "88-90"                      
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "30928249",
-                "title": "Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
-                "author": "Orr NL, Wahl KJ, Joannou A, Hartmann D, Valle L, Yong PJ",
-                "journal":"Sexual Medicine Reviews",
-                "year":"2020",
-                "volume": "8",
-                "issue": "1",
-                "pages": "3-17"      
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "32176592",             
-                "title": "A Quantitative Analysis of Sleep Quality in Women with Endometriosis",
-                "author": "Arion K, Orr NL, Noga H, Allaire C, Williams C, Bedaiwy MA, Yong PJ",
-                "journal":"Journal of Women's Health",
-                "year":"2020",
-                "volume": "29",
-                "issue": "9",
-                "pages": "1209-1215"           
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "31864912",
-                "title": "Endometriosis and Negative Perception of the Medical Profession",
-                "author": "Ng N, Wahl KJ, Orr NL, Noga H, Williams C, Allaire C, Bedaiwy MA, Yong PJ",
-                "journal":"Journal of Obstetrics and Gynecology Canada",
-                "year":"2020",
-                "volume": "42",
-                "issue": "3",
-                "pages": "248-255"     
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "32061579",
-                "title": "Deep Dyspareunia, Superficial Dyspareunia, and Infertility Concerns Among Women with Endometriosis: A Cross-Sectional Study",
-                "author": "Wahl KJ, Orr NL, Lisonek M, Noga H, Bedaiwy MA, Williams C, Allaire C, Albert A, Smith KB, Cox S, Yong PJ",
-                "journal":"Sexual Medicine",
-                "year":"2020",
-                "volume": "8",
-                "issue": "2",
-                "pages": "274-281"     
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "31983669",
-                "title": "Phenotyping Sexual Pain in Endometriosis using the Central Sensitization Inventory",
-                "author": "Orr NL, Wahl KJ, Noga H, Allaire C, Williams C, Bedaiwy MA, Albert A, Smith KB, Yong PJ",
-                "journal":"Journal of Sexual Medicine",
-                "year":"2020",
-                "volume": "17",
-                "issue": "4",
-                "pages": "761-770"      
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid":"31315131",
-                "title": "Plasminogen Activator Inhibitor-1 (PAI-1) Expression in Endometriosis",
-                "author": "Alotaibi FT, Peng B, Klausen C, Lee AF, Abdelkareem AO, Orr NL, Noga H, Bedaiwy MA, Yong PJ",
-                "journal":"PLoS One",
-                "year":"2019",
-                "volume": "14",
-                "issue": "7",
-                "pages": "e0219064"      
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "30428062",
-                "title": "Iatrogenic Endometriosis Harbors Somatic Cancer-Driver Mutations",
-                "author":"Lac V, Verhoef L, Aguirre-Hernandez R, Nazeran TM, Tessier-Cloutier B, Praetorius T, Orr NL, Noga H, Lum A, Khattra J, Prentice LM, Co D, Kobel M, Mijatovic V, Lee AF, Pasternak J, Bleeker MC, Kraemer B, Brucker SY, Kommoss F, Kommoss S, Horlings HM, Yong PJ, Huntsman DG, Anglesio MS",  
-                "journal":"Human Reproduction",
-                "year":"2019",
-                "volume": "34",
-                "issue": "1",
-                "pages": "69-78"     
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid": "30078464",
-                "title":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
-                "author": "Orr NL, Noga H, Williams C, Allaire C, Bedaiwy MA, Lisonkova S, Smith KB, Yong PJ",
-                "journal":"Journal of Sexual Medicine",
-                "year":"2018",
-                "volume": "15",
-                "issue": "8",
-                "pages": "1158-1166"    
-            },
-
-            {
-                "type": "ARTICLE",
-                "pmid":"28489996",
-                "title":"Cancer-Associated Mutations in Endometriosis without Cancer",
-                "author": "Anglesio MS, Papadopoulos N, Ayhan A, Nazeran TM, Noe M, Horlings HM, Lum A, Jones S, Senz J, Seckin T, Ho J, Wu RC, Lac V, Ogawa H, Tessier-Cloutier B, Alhassan R, Wang A, Wang Y, Cohen JD, Wong F, Hasanovic A, Orr NL, Zhang M, Popoli M, McMahon W, Wood LD, Mattox A, Allaire C, Segars J, Williams C, Tomasetti C, Boyd N, Kinzler KW, Gilks CB, Diaz L, Wang TL, Vogelstein B, Yong PJ, Huntsman DG, Shih IM",
-                "journal":"New England Journal of Medicine",
-                "year":"2017",
-                "volume": "376",
-                "issue": "19",
-                "pages": "1835-1848"   
-            }
-        ]
-    }
-
-]
+        {
+            "type": "ARTICLE",
+            "pmid":"28489996",
+            "title":"Cancer-Associated Mutations in Endometriosis without Cancer",
+            "author": "Anglesio MS, Papadopoulos N, Ayhan A, Nazeran TM, Noe M, Horlings HM, Lum A, Jones S, Senz J, Seckin T, Ho J, Wu RC, Lac V, Ogawa H, Tessier-Cloutier B, Alhassan R, Wang A, Wang Y, Cohen JD, Wong F, Hasanovic A, Orr NL, Zhang M, Popoli M, McMahon W, Wood LD, Mattox A, Allaire C, Segars J, Williams C, Tomasetti C, Boyd N, Kinzler KW, Gilks CB, Diaz L, Wang TL, Vogelstein B, Yong PJ, Huntsman DG, Shih IM",
+            "journal":"New England Journal of Medicine",
+            "year":"2017",
+            "volume": "376",
+            "issue": "19",
+            "pages": "1835-1848"   
+        }
+    ]
+}
