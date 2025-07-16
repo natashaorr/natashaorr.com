@@ -66,15 +66,16 @@ function renderSection() {
       input.classList.add("form-control");
       input.value = value;
 
+      // Handle 'authors' input specially
       if (key === "authors") {
-        // Convert authors to a comma-separated list of names, for display purposes
+        // Convert authors to a comma-separated list of names
         input.value = item[key].map(author => author.name).join(", ");
         input.placeholder = "Enter authors, separated by commas";
       }
 
       input.oninput = () => {
         if (key === "authors") {
-          // Split the input by commas but make sure to keep full names together
+          // Split the input by commas and preserve full names together
           const authorsArray = input.value
             .split(",")
             .map(name => {
@@ -142,8 +143,6 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
-
-
 
 function moveItem(index, delta) {
   const sectionData = data[currentSection];
