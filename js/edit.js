@@ -1,6 +1,6 @@
 // edit.js
 
-// v3.1
+// v3.2
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -35,110 +35,174 @@ function initSectionTabs() {
 }
 
 function renderSection() {
-    const sectionTitle = document.getElementById("sectionTitle");
-    sectionTitle.textContent = currentSection;
-    const sectionContent = document.getElementById("sectionContent");
+  const sectionTitle = document.getElementById("sectionTitle");
+  sectionTitle.textContent = currentSection;
+  const sectionContent = document.getElementById("sectionContent");
 
-    console.log("Current Section:", currentSection);
-    console.log("Section Data", data[currentSection]);
+  sectionContent.innerHTML = "";
 
-    sectionContent.innerHTML = "";
+  const sectionData = data[currentSection];
+  if (!Array.isArray(sectionData)) {
+    sectionContent.innerHTML = "<p>This section has no entries.</p>";
+    return;
+  }
 
-    const sectionData = data[currentSection];
-    if (!Array.isArray(sectionData)) {
-        sectionContent.innerHTML = "<p>This section has no entries.</p>";
-        return;
+  sectionData.forEach((item, index) => {
+    const card = document.createElement("div");
+    card.classList.add("card", "mb-3");
+    const cardBody = document.createElement("div");
+    cardBody.classList.add("card-body");
+
+    // Render the article title first, but only for Publications
+    if (currentSection === "Publications") {
+      const articleGroup = document.createElement("div");
+      articleGroup.classList.add("mb-2");
+
+      const articleLabel = document.createElement("label");
+      articleLabel.innerText = "Article Title";
+      articleLabel.classList.add("form-label");
+      articleGroup.appendChild(articleLabel);
+
+      const articleInput = document.createElement("input");
+      articleInput.type = "text";
+      articleInput.classList.add("form-control");
+      articleInput.value = item.article || ""; // Set the article title
+      articleInput.placeholder = "Article Title";
+
+      articleInput.oninput = () => item.article = articleInput.value; // Update article in data
+      articleGroup.appendChild(articleInput);
+      cardBody.appendChild(articleGroup);
     }
 
-    sectionData.forEach((item, index) => {
-        const card = document.createElement("div");
-        card.classList.add("card", "mb-3");
-        const cardBody = document.createElement("div");
-        cardBody.classList.add("card-body");
+    // Render authors (only for Publications)
+    if (currentSection === "Publications" && item.authors && Array.isArray(item.authors)) {
+      const authorsGroup = document.createElement("div");
+      authorsGroup.classList.add("mb-3");
 
-        // Render Article Title only for Publications section
-        if (currentSection === "Publications") {
-            const articleTitleGroup = document.createElement("div");
-            articleTitleGroup.classList.add("mb-2");
+      const authorsLabel = document.createElement("label");
+      authorsLabel.innerText = "Authors";
+      authorsLabel.classList.add("form-label");
+      authorsGroup.appendChild(authorsLabel);
 
-            const articleTitleLabel = document.createElement("label");
-            articleTitleLabel.innerText = "Article Title";
-            articleTitleLabel.classList.add("form-label");
+      item.authors.forEach((author, authorIndex) => {
+        const authorGroup = document.createElement("div");
+        authorGroup.classList.add("d-flex", "mb-2");
 
-            const articleTitleInput = document.createElement("input");
-            articleTitleInput.type = "text";
-            articleTitleInput.classList.add("form-control");
-            articleTitleInput.value = item.article || ""; // Default to empty string if no value
-            articleTitleInput.oninput = () => data[currentSection][index].article = articleTitleInput.value;
+        const authorInput = document.createElement("input");
+        authorInput.type = "text";
+        authorInput.classList.add("form-control");
+        authorInput.value = author.name || ""; // Set the author's name
+        authorInput.placeholder = "Author Name";
 
-            articleTitleGroup.appendChild(articleTitleLabel);
-            articleTitleGroup.appendChild(articleTitleInput);
-            cardBody.appendChild(articleTitleGroup);
-        }
-
-        Object.entries(item).forEach(([key, value]) => {
-            // Skip "article" key in Publications section, as it's handled above
-            if (key === "article" && currentSection === "Publications") return;
-
-            const group = document.createElement("div");
-            group.classList.add("mb-2");
-
-            const label = document.createElement("label");
-            label.innerText = key;
-            label.classList.add("form-label");
-
-            const input = document.createElement("input");
-            input.type = "text";
-            input.classList.add("form-control");
-            input.value = value || "";  // Default to empty string if value is undefined
-            input.oninput = () => data[currentSection][index][key] = input.value;
-
-            group.appendChild(label);
-            group.appendChild(input);
-            cardBody.appendChild(group);
-        });
-
-        const btnRow = document.createElement("div");
-        btnRow.classList.add("d-flex", "justify-content-between", "pt-2");
-
-        const upBtn = document.createElement("button");
-        upBtn.classList.add("btn", "btn-sm", "btn-secondary");
-        upBtn.innerText = "↑";
-        upBtn.disabled = index === 0;
-        upBtn.onclick = () => moveItem(index, -1);
-
-        const downBtn = document.createElement("button");
-        downBtn.classList.add("btn", "btn-sm", "btn-secondary");
-        downBtn.innerText = "↓";
-        downBtn.disabled = index === sectionData.length - 1;
-        downBtn.onclick = () => moveItem(index, 1);
+        authorInput.oninput = () => {
+          item.authors[authorIndex].name = authorInput.value; // Update author name in data
+        };
 
         const delBtn = document.createElement("button");
         delBtn.classList.add("btn", "btn-sm", "btn-danger", "ms-2");
         delBtn.innerText = "Delete";
         delBtn.onclick = () => {
-            data[currentSection].splice(index, 1);
-            renderSection();
+          item.authors.splice(authorIndex, 1); // Remove the author
+          renderSection(); // Re-render the section after removal
         };
 
-        btnRow.append(upBtn, downBtn, delBtn);
-        cardBody.appendChild(btnRow);
-        card.appendChild(cardBody);
-        sectionContent.appendChild(card);
+        const upBtn = document.createElement("button");
+        upBtn.classList.add("btn", "btn-sm", "btn-secondary", "ms-2");
+        upBtn.innerText = "↑";
+        upBtn.disabled = authorIndex === 0;
+        upBtn.onclick = () => moveAuthor(item, authorIndex, -1);
+
+        const downBtn = document.createElement("button");
+        downBtn.classList.add("btn", "btn-sm", "btn-secondary", "ms-2");
+        downBtn.innerText = "↓";
+        downBtn.disabled = authorIndex === item.authors.length - 1;
+        downBtn.onclick = () => moveAuthor(item, authorIndex, 1);
+
+        authorGroup.appendChild(authorInput);
+        authorGroup.appendChild(upBtn);
+        authorGroup.appendChild(downBtn);
+        authorGroup.appendChild(delBtn);
+        authorsGroup.appendChild(authorGroup);
+      });
+
+      // Button to add new author
+      const addAuthorBtn = document.createElement("button");
+      addAuthorBtn.classList.add("btn", "btn-outline-success", "mt-2");
+      addAuthorBtn.innerText = "Add Author";
+      addAuthorBtn.onclick = () => {
+        item.authors.push({ name: "", title: "" }); // Add empty author
+        renderSection(); // Re-render the section after adding
+      };
+
+      authorsGroup.appendChild(addAuthorBtn);
+      cardBody.appendChild(authorsGroup);
+    }
+
+    // Render other fields (like year, journal, etc.)
+    Object.entries(item).forEach(([key, value]) => {
+      if (key !== "authors" && key !== "article") { // Skip authors and article from here
+        const group = document.createElement("div");
+        group.classList.add("mb-2");
+
+        const label = document.createElement("label");
+        label.innerText = key;
+        label.classList.add("form-label");
+
+        const input = document.createElement("input");
+        input.type = "text";
+        input.classList.add("form-control");
+        input.value = value || ""; // Default to empty string if no value
+        input.oninput = () => item[key] = input.value;
+
+        group.appendChild(label);
+        group.appendChild(input);
+        cardBody.appendChild(group);
+      }
     });
 
-    const addBtn = document.createElement("button");
-    addBtn.classList.add("btn", "btn-outline-success", "mt-3");
-    addBtn.innerText = "Add New";
-    addBtn.onclick = () => {
-        const newItem = {};
-        const keys = Object.keys(data[currentSection][0] || { key: "" });
-        keys.forEach(k => newItem[k] = "");
-        data[currentSection].push(newItem);
-        renderSection();
+    // Append up, down, delete buttons
+    const btnRow = document.createElement("div");
+    btnRow.classList.add("d-flex", "justify-content-between", "pt-2");
+
+    const upBtn = document.createElement("button");
+    upBtn.classList.add("btn", "btn-sm", "btn-secondary");
+    upBtn.innerText = "↑";
+    upBtn.disabled = index === 0;
+    upBtn.onclick = () => moveItem(index, -1);
+
+    const downBtn = document.createElement("button");
+    downBtn.classList.add("btn", "btn-sm", "btn-secondary");
+    downBtn.innerText = "↓";
+    downBtn.disabled = index === sectionData.length - 1;
+    downBtn.onclick = () => moveItem(index, 1);
+
+    const delBtn = document.createElement("button");
+    delBtn.classList.add("btn", "btn-sm", "btn-danger", "ms-2");
+    delBtn.innerText = "Delete";
+    delBtn.onclick = () => {
+      data[currentSection].splice(index, 1);
+      renderSection();
     };
 
-    sectionContent.appendChild(addBtn);
+    btnRow.append(upBtn, downBtn, delBtn);
+    cardBody.appendChild(btnRow);
+    card.appendChild(cardBody);
+    sectionContent.appendChild(card);
+  });
+
+  // Add new item button
+  const addBtn = document.createElement("button");
+  addBtn.classList.add("btn", "btn-outline-success", "mt-3");
+  addBtn.innerText = "Add New";
+  addBtn.onclick = () => {
+    const newItem = {};
+    const keys = Object.keys(data[currentSection][0] || { key: "" });
+    keys.forEach(k => newItem[k] = "");
+    data[currentSection].push(newItem);
+    renderSection();
+  };
+
+  sectionContent.appendChild(addBtn);
 }
 
 
