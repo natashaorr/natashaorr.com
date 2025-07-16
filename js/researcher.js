@@ -4,7 +4,7 @@ Created: April 2023
 Updated: July 2025
 */
 
-// v2.1
+// v2.2
 
 
 /* Constants */
@@ -332,8 +332,10 @@ function populateEmployment(obj) {
 function populateExperience(obj) {
     const sectionExperiences = document.querySelector("#experienceCards");
 
+    // Accessing the Experiences array directly
     for (const experience of obj.Experiences) {
-        if ((!document.title.includes("Experience") && experience.show == "main") || (document.title.includes("Experience") && (experience.show == "main" || experience.show == "yes"))) {
+        if ((!document.title.includes("Experience") && experience.show == "main") || 
+            (document.title.includes("Experience") && (experience.show == "main" || experience.show == "yes"))) {
             const myExperience = document.createElement('div');
             myExperience.classList.add("media", "stream-item", "exp-box");
 
@@ -356,6 +358,7 @@ function populateExperience(obj) {
             const myExperienceLocation = document.createElement('p');
             myExperienceLocation.textContent = experience.location;
             myExperienceCompany.appendChild(myExperienceLocation);
+
             const myExperienceDate = document.createElement('p');
             myExperienceDate.innerText = experience.date + " | " + experience.city;
             myExperienceCompany.appendChild(myExperienceDate);
@@ -377,8 +380,10 @@ function populateExperience(obj) {
 function populateRecognitions(obj) {
     const sectionRecognitions = document.querySelector("#recognitionCards");
 
+    // Accessing the Recognitions array directly
     for (const recognition of obj.Recognitions) {
-        if ((!document.title.includes("Recognitions") && recognition.show == "main") || (document.title.includes("Recognitions") && (recognition.show == "main" || recognition.show == "yes"))) {
+        if ((!document.title.includes("Recognitions") && recognition.show == "main") || 
+            (document.title.includes("Recognitions") && (recognition.show == "main" || recognition.show == "yes"))) {
             const myRecognition = document.createElement('div');
             myRecognition.classList.add("card", "experience", "course");
 
@@ -416,64 +421,71 @@ function populateRecognitions(obj) {
     }
 }
 
-/* Function to populate the Publications section of the website. Looks for ID=publicationCards */
-function populatePublications(obj) {
-    const sectionPublications = document.querySelector("#publicationCards");
-    const citations = obj.Citations; // update here to use Citations directly from the new structure
+/* Function to populate the Presentations section of the website. Looks for ID=presentationCards */
+function populatePresentations(obj) {
+    const sectionPresentations = document.querySelector("#presentationCards");
 
-    for (const publication of obj.Publications) {
-        if ((!document.title.includes("Publications") && publication.show == "main") || (document.title.includes("Publications") && (publication.show == "main" || publication.show == "yes"))) {
-            const myPublication = document.createElement('div');
-            myPublication.classList.add("pub-list-item");
+    // Accessing Presentations array directly
+    for (const presentation of obj.Presentations) {
+        if ((!document.title.includes("Presentations") && presentation.show == "main") || 
+            (document.title.includes("Presentations") && (presentation.show == "main" || presentation.show == "yes"))) {
+            const myPresentation = document.createElement('div');
+            myPresentation.classList.add("pub-list-item", "exp-box");
+            myPresentation.style = "margin:20px";
 
-            const myPubIcon = document.createElement('i');
-            myPubIcon.classList.add("far", "fa-file-alt", "pub-icon");
-            myPublication.appendChild(myPubIcon);
+            const myTitleRow = document.createElement('div');
+            myTitleRow.classList.add("row");
 
-            const mySpanClass = document.createElement('span');
-            mySpanClass.classList.add("article-metadata", "li-cite-author");
-            myPublication.appendChild(mySpanClass);
+            const myTitle = document.createElement('a');
+            myTitle.href = presentation.link;
+            myTitle.target = "_blank";
+            myTitle.innerText = presentation.conference;
+            myTitle.style = "padding-left:15px";
+            myTitleRow.appendChild(myTitle);
+            myPresentation.appendChild(myTitleRow);
 
-            let count = 0;
-            const maxCount = publication.authors.length;
+            const myRow = document.createElement('div');
+            myRow.classList.add("row");
 
-            for (const author of publication.authors) {
-                count++;
-                const mySpan = document.createElement('span');
-                let boldName = author.name;
+            const myDescCol = document.createElement('div');
+            myDescCol.classList.add('col-8');
 
-                if (count === maxCount) {
-                    boldName = boldName + " ";
-                } else {
-                    boldName = boldName + "; ";
-                }
+            const myTypeSpan = document.createElement('span');
+            myTypeSpan.style = "font-weight: bold";
+            myTypeSpan.innerText = presentation.type + " Presentation";
+            myDescCol.appendChild(myTypeSpan);
 
-                if (boldName.includes(keyAuthor)) {
-                    const myBold = document.createElement('b');
-                    myBold.textContent = boldName;
-                    mySpan.appendChild(myBold);
-                } else {
-                    mySpan.textContent = boldName;
-                }
+            const myTypePara = document.createElement('p');
+            myTypePara.innerHTML = presentation.title;
+            const myNotePara = document.createElement('p');
+            myNotePara.classList.add("award");
+            myNotePara.innerText = presentation.notes;
+            myDescCol.append(myTypePara, myNotePara);
+            myRow.appendChild(myDescCol);
 
-                myPublication.appendChild(mySpan);
-            }
+            const myLocCol = document.createElement('div');
+            myLocCol.classList.add('col-4', 'text-center');
 
-            const myYear = document.createElement('a');
-            myYear.textContent = " (" + publication.year + "). ";
-            myPublication.appendChild(myYear);
+            const myDate = document.createElement('p');
+            myDate.classList.add("mb-0");
+            myDate.innerText = presentation.date;
 
-            const myPub = document.createElement('a');
-            myPub.href = publication.article_link;
-            myPub.target = "_blank";
-            myPub.innerText = publication.article + " ";
-            myPublication.appendChild(myPub);
+            myLocCol.appendChild(myDate);
 
-            const myNewEm = document.createElement('em');
-            myNewEm.textContent = publication.journal;
-            myPublication.appendChild(myNewEm);
+            const myMidDot = document.createElement('i');
+            myMidDot.classList.add("fa-solid", "fa-ellipsis");
+            myLocCol.appendChild(myMidDot);
 
-            sectionPublications.appendChild(myPublication);
+            const myLoc = document.createElement('p');
+            myLoc.innerText = presentation.location;
+
+            myLocCol.appendChild(myLoc);
+
+            myRow.appendChild(myLocCol);
+
+            myPresentation.appendChild(myRow);
+
+            sectionPresentations.appendChild(myPresentation);
         }
     }
 }
