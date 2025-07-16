@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.6
+// v2.7
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -53,7 +53,7 @@ function renderSection() {
     const cardBody = document.createElement("div");
     cardBody.classList.add("card-body");
 
-    // Handle different fields in the section data
+    // Handle fields and authors differently
     Object.entries(item).forEach(([key, value]) => {
       const group = document.createElement("div");
       group.classList.add("mb-2");
@@ -67,7 +67,7 @@ function renderSection() {
         const authorContainer = document.createElement("div");
         authorContainer.classList.add("author-container");
 
-        // Render authors as individual input fields
+        // Render each author as a separate input field
         value.forEach((author, authorIndex) => {
           const authorGroup = document.createElement("div");
           authorGroup.classList.add("d-flex", "mb-2");
@@ -75,7 +75,7 @@ function renderSection() {
           const authorInput = document.createElement("input");
           authorInput.type = "text";
           authorInput.classList.add("form-control");
-          authorInput.value = author.name;
+          authorInput.value = author.name || "";  // Handle missing names
           authorInput.placeholder = "Author Name";
 
           // Update the authors array when the input changes
@@ -166,6 +166,7 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
 
 
 function moveItem(index, delta) {
