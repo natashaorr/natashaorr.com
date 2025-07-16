@@ -1,6 +1,6 @@
 // edit.js
 
-// v2.8
+// v2.9
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -85,7 +85,21 @@ function renderSection() {
           renderSection(); // Re-render the section after removal
         };
 
+        const upBtn = document.createElement("button");
+        upBtn.classList.add("btn", "btn-sm", "btn-secondary", "ms-2");
+        upBtn.innerText = "↑";
+        upBtn.disabled = authorIndex === 0;
+        upBtn.onclick = () => moveAuthor(item, authorIndex, -1);
+
+        const downBtn = document.createElement("button");
+        downBtn.classList.add("btn", "btn-sm", "btn-secondary", "ms-2");
+        downBtn.innerText = "↓";
+        downBtn.disabled = authorIndex === item.authors.length - 1;
+        downBtn.onclick = () => moveAuthor(item, authorIndex, 1);
+
         authorGroup.appendChild(authorInput);
+        authorGroup.appendChild(upBtn);
+        authorGroup.appendChild(downBtn);
         authorGroup.appendChild(delBtn);
         authorsGroup.appendChild(authorGroup);
       });
@@ -169,6 +183,15 @@ function renderSection() {
 
   sectionContent.appendChild(addBtn);
 }
+
+// Move Author in the list
+function moveAuthor(item, authorIndex, delta) {
+  const temp = item.authors[authorIndex];
+  item.authors[authorIndex] = item.authors[authorIndex + delta];
+  item.authors[authorIndex + delta] = temp;
+  renderSection(); // Re-render the section after changing author order
+}
+
 
 
 function moveItem(index, delta) {
