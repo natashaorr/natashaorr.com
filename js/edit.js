@@ -1,6 +1,6 @@
 // edit.js
 
-// v3.2
+// v3.3
 
 const sections = [
   "Interests", "Values", "Schools", "Employers",
@@ -195,9 +195,21 @@ function renderSection() {
   addBtn.classList.add("btn", "btn-outline-success", "mt-3");
   addBtn.innerText = "Add New";
   addBtn.onclick = () => {
-    const newItem = {};
-    const keys = Object.keys(data[currentSection][0] || { key: "" });
+  let newItem = {};
+  if (currentSection === "Publications") {
+    newItem = {
+      article: "",
+      authors: [{ name: "", title: "" }],
+      journal: "",
+      year: "",
+      article_link: "",
+      pmid: "",
+      show: "main"
+    };
+  } else {
+    const keys = Object.keys(data[currentSection][0] || {});
     keys.forEach(k => newItem[k] = "");
+  }
     data[currentSection].push(newItem);
     renderSection();
   };
