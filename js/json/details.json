@@ -112,6 +112,106 @@
     ],
     "Publications": [
         {
+            "article": "Pain Sensitivity Questionnaire in Endometriosis",
+            "authors": [
+                {"name": "Gentles, AJ", "title": ""},
+                {"name": "Wong, S", "title": ""},
+                {"name": "Orr, NL", "title": ""},
+                {"name": "Noga, H", "title": ""},
+                {"name": "Allaire, C", "title": ""},
+                {"name": "Williams, C", "title": ""},
+                {"name": "Bedaiwy, MA", "title": ""},
+                {"name": "Lee, C", "title": ""},
+                {"name": "Kramer, J", "title": ""},
+                {"name": "Yong, PJ", "title": ""}
+            ],
+            "journal": "Journal of Pain",
+            "year": "2025",
+            "article_link": "https://pubmed.ncbi.nlm.nih.gov/40049377/",
+            "pmid": "40049377",
+            "show": "main"
+        },
+        {
+            "article": "Somatic PTEN and ARID1A Loss and Endometriosis Disease Burden: A Longitudinal Study",
+            "authors": [
+                {"name": "Tucker, DR", "title": ""},
+                {"name": "Lee, AF", "title": ""},
+                {"name": "Orr, NL", "title": ""},
+                {"name": "Alotaibi, FT", "title": ""},
+                {"name": "Noga, H", "title": ""},
+                {"name": "Williams, C", "title": ""},
+                {"name": "Allaire, C", "title": ""},
+                {"name": "Bedaiwy, MA", "title": ""},
+                {"name": "Huntsman, DG", "title": ""},
+                {"name": "Kobel, M", "title": ""},
+                {"name": "Anglesio, MS", "title": ""},
+                {"name": "Yong, PJ", "title": ""}
+            ],
+            "journal": "Human Reproduction",
+            "year": "2025",
+            "article_link": "https://pubmed.ncbi.nlm.nih.gov/39701665/",
+            "pmid": "39701665",
+            "show": "main"
+        },
+        {
+            "article": "Ohnut vs. Waitlist Control For The Self-Management Of Endometriosis-Associated Deep Dyspareunia: A Pilot Randomized Controlled Trial",
+            "authors": [
+                {"name": "Wahl, K", "title": ""},
+                {"name": "Orr, NL", "title": "" },
+                { "name": "Parmar, G", "title": "" },
+                { "name": "Zhang, SXJ", "title": ""},
+                {"name": "MacLeod, R", "title": ""},
+                { "name": "Noga, H", "title": ""},
+                {"name": "Albert, A", "title": ""},
+                {"name": "Flannigan, R", "title": ""},
+                {"name": "Brotto, L", "title": "" },
+                {"name": "Yong, PJ",  "title": ""}
+            ],
+            "journal": "Sexual Medicine",
+            "year": "2024",
+            "article_link": "https://pubmed.ncbi.nlm.nih.gov/39220343/",
+            "pmid": "39220343",
+            "show": "main"
+        },
+        {
+            "article": "Pain with Orgasm in Endometriosis: Potential Etiological Factors and Clinical Correlates",
+            "authors": [
+                { "name": "Ding, A", "title": ""},
+                {"name": "Noga, H", "title": ""},
+                {"name": "Bouchard, K", "title": ""},
+                {"name": "Bedaiwy, M", "title": "" },
+                {"name": "Lee, C", "title": ""},
+                {"name": "Allaire, C", "title": ""},
+                {"name": "Orr, NL", "title": ""},
+                {"name": "Yong, PJ", "title": ""}
+            ],
+            "journal": "Journal of Sexual Medicine",
+            "year": "2024",
+            "article_link": "https://pubmed.ncbi.nlm.nih.gov/39039031/",
+            "pmid": "39039031",
+            "show": "main"
+        },
+        {
+            "article": "Does Menstrual Health and Endometriosis Education Affect Knowledge and Attitudes Among Middle and Secondary School Students? A Cluster Randomized Controlled Trial",
+            "authors": [
+                {"name": "Wahl, K", "title": ""},
+                {"name": "Albert, A", "title": ""},
+                {"name": "Larente, M", "title": ""},
+                {"name": "Lopez de Arbina, E", "title": ""},
+                {"name": "Kennedy, L", "title": ""},
+                {"name": "Sutherland, JL", "title": ""},
+                {"name": "Imtiaz, S", "title": ""},
+                {"name": "Orr, NL", "title": ""},
+                {"name": "Allaire, C", "title": ""},
+                {"name": "Yong, PJ", "title": ""}
+            ],
+            "journal": "Journal of Obstetrics and Gynecology Canada",
+            "year": "2024",
+            "article_link": "https://pubmed.ncbi.nlm.nih.gov/38871121/",
+            "pmid": "38871121",
+            "show": "main"
+        },
+        {
             "article":"Association  of Central Sensitization Inventory Scores with Pain Outcomes After Endometriosis Surgery",
             "authors":[
                 {"name":"Orr, NL", "title":""},
@@ -129,7 +229,6 @@
             "pmid":"36848090",
             "show" : "main"
         },
-
         {
             "article":"KRAS  Mutation and Greater Burden of Disease in Endometriosis",
             "authors":[
@@ -155,8 +254,7 @@
             "article_link":"https://pubmed.ncbi.nlm.nih.gov/36977195/",
             "pmid":"36977195",
             "show" : "main"
-        },
-        
+        },  
         {
             "article":"Central  Sensitization Inventory in Endometriosis",
             "authors":[
@@ -177,7 +275,6 @@
             "pmid":"34030173",
             "show" : "main"
         },
-
         {
             "article":"Single-cell Transcriptomic Analysis of Endometriosis",
             "authors":[
@@ -215,7 +312,6 @@
             "pmid":"36624343",
             "show" : "yes"
         },
-
         {
             "article":"Ohnut Versus  a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
             "authors":[
@@ -236,7 +332,6 @@
             "pmid":"36972117",
             "show" : "main"
         },
-
         {
             "article":"Endometriosis in Canada: It Is Time for Collaboration to Advance Patient-Oriented, Evidence-Based Policy, Care, and Research",
             "authors":[
@@ -252,7 +347,6 @@
             "pmid":"32753352",
             "show" : "yes"                              
         },
-
         {
             "article":"Deep Dyspareunia: Review of Pathophysiology and Proposed Future Research Priorities",
             "authors":[
@@ -270,7 +364,6 @@
             "pmid":"30928249",
             "show" : "yes"      
         },
-
         {
             "article":"A Quantitative Analysis of Sleep Quality in Women with Endometriosis",
             "authors":[
@@ -288,7 +381,6 @@
             "pmid":"32176592",
             "show" : "yes"      
         },
-
         {
             "article":"Endometriosis and Negative Perception of the Medical Profession",
             "authors":[
@@ -307,7 +399,6 @@
             "pmid":"31864912",
             "show" : "yes"     
         },
-
         {
             "article":"Deep Dyspareunia, Superficial Dyspareunia, and Infertility Concerns Among Women with Endometriosis: A Cross-Sectional Study",
             "authors":[
@@ -329,7 +420,6 @@
             "pmid":"32061579",
             "show" : "yes"     
         },
-
         {
             "article":"Phenotyping Sexual Pain in Endometriosis using the Central Sensitization Inventory",
             "authors":[
@@ -349,7 +439,6 @@
             "pmid":"31983669",
             "show" : "yes"   
         },
-
         {
             "article":"Plasminogen Activator Inhibitor-1 (PAI-1) Expression in Endometriosis",
             "authors":[
@@ -369,7 +458,6 @@
             "pmid":"31315131",
             "show" : "yes"  
         },
-
         {
             "article":"Iatrogenic Endometriosis Harbors Somatic Cancer-Driver Mutations",
             "authors":[
@@ -405,7 +493,6 @@
             "pmid":"30428062",
             "show" : "yes"  
         },
-
         {
             "article":"Deep Dyspareunia in Endometriosis: Role of the Bladder and Pelvic Floor",
             "authors":[
@@ -424,7 +511,6 @@
             "pmid":"30078464",
             "show" : "yes" 
         },
-
         {
             "article":"Cancer-Associated Mutations in Endometriosis without Cancer",
             "authors":[
@@ -533,106 +619,6 @@
             "year": "2023",
             "article_link": "https://pubmed.ncbi.nlm.nih.gov/38014766/",
             "pmid": "38014766",
-            "show": "main"
-        },
-        {
-            "article": "Ohnut vs. Waitlist Control For The Self-Management Of Endometriosis-Associated Deep Dyspareunia: A Pilot Randomized Controlled Trial",
-            "authors": [
-                {"name": "Wahl, K", "title": ""},
-                {"name": "Orr, NL", "title": "" },
-                { "name": "Parmar, G", "title": "" },
-                { "name": "Zhang, SXJ", "title": ""},
-                {"name": "MacLeod, R", "title": ""},
-                { "name": "Noga, H", "title": ""},
-                {"name": "Albert, A", "title": ""},
-                {"name": "Flannigan, R", "title": ""},
-                {"name": "Brotto, L", "title": "" },
-                {"name": "Yong, PJ",  "title": ""}
-            ],
-            "journal": "Sexual Medicine",
-            "year": "2024",
-            "article_link": "https://pubmed.ncbi.nlm.nih.gov/39220343/",
-            "pmid": "39220343",
-            "show": "main"
-        },
-        {
-            "article": "Pain with Orgasm in Endometriosis: Potential Etiological Factors and Clinical Correlates",
-            "authors": [
-                { "name": "Ding, A", "title": ""},
-                {"name": "Noga, H", "title": ""},
-                {"name": "Bouchard, K", "title": ""},
-                {"name": "Bedaiwy, M", "title": "" },
-                {"name": "Lee, C", "title": ""},
-                {"name": "Allaire, C", "title": ""},
-                {"name": "Orr, NL", "title": ""},
-                {"name": "Yong, PJ", "title": ""}
-            ],
-            "journal": "Journal of Sexual Medicine",
-            "year": "2024",
-            "article_link": "https://pubmed.ncbi.nlm.nih.gov/39039031/",
-            "pmid": "39039031",
-            "show": "main"
-        },
-        {
-            "article": "Does Menstrual Health and Endometriosis Education Affect Knowledge and Attitudes Among Middle and Secondary School Students? A Cluster Randomized Controlled Trial",
-            "authors": [
-                {"name": "Wahl, K", "title": ""},
-                {"name": "Albert, A", "title": ""},
-                {"name": "Larente, M", "title": ""},
-                {"name": "Lopez de Arbina, E", "title": ""},
-                {"name": "Kennedy, L", "title": ""},
-                {"name": "Sutherland, JL", "title": ""},
-                {"name": "Imtiaz, S", "title": ""},
-                {"name": "Orr, NL", "title": ""},
-                {"name": "Allaire, C", "title": ""},
-                {"name": "Yong, PJ", "title": ""}
-            ],
-            "journal": "Journal of Obstetrics and Gynecology Canada",
-            "year": "2024",
-            "article_link": "https://pubmed.ncbi.nlm.nih.gov/38871121/",
-            "pmid": "38871121",
-            "show": "main"
-        },
-        {
-            "article": "Somatic PTEN and ARID1A Loss and Endometriosis Disease Burden: A Longitudinal Study",
-            "authors": [
-                {"name": "Tucker, DR", "title": ""},
-                {"name": "Lee, AF", "title": ""},
-                {"name": "Orr, NL", "title": ""},
-                {"name": "Alotaibi, FT", "title": ""},
-                {"name": "Noga, H", "title": ""},
-                {"name": "Williams, C", "title": ""},
-                {"name": "Allaire, C", "title": ""},
-                {"name": "Bedaiwy, MA", "title": ""},
-                {"name": "Huntsman, DG", "title": ""},
-                {"name": "Kobel, M", "title": ""},
-                {"name": "Anglesio, MS", "title": ""},
-                {"name": "Yong, PJ", "title": ""}
-            ],
-            "journal": "Human Reproduction",
-            "year": "2025",
-            "article_link": "https://pubmed.ncbi.nlm.nih.gov/39701665/",
-            "pmid": "39701665",
-            "show": "main"
-        },
-        {
-            "article": "Pain Sensitivity Questionnaire in Endometriosis",
-            "authors": [
-                {"name": "Gentles, AJ", "title": ""},
-                {"name": "Wong, S", "title": ""},
-                {"name": "Orr, NL", "title": ""},
-                {"name": "Noga, H", "title": ""},
-                {"name": "Allaire, C", "title": ""},
-                {"name": "Williams, C", "title": ""},
-                {"name": "Bedaiwy, MA", "title": ""},
-                {"name": "Lee, C", "title": ""},
-                {"name": "Kramer, J", "title": ""},
-                {"name": "Yong, PJ", "title": ""}
-            ],
-            "journal": "Journal of Pain",
-            "year": "2025",
-            "article_link": "https://pubmed.ncbi.nlm.nih.gov/40049377/",
-            "pmid": "40049377",
             "show": "main"
         }
     ],
