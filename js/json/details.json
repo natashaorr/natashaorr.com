@@ -313,6 +313,66 @@
             "show" : "yes"
         },
         {
+            "article": "A Patient-Oriented Workshop on Sexual Pain and Endometriosis: Preliminary Evidence for Improvements in Painful Intercourse Self- Efficacy",
+            "authors": [
+                {"name": "Orr, NL", "title": ""},
+                {"name": "Sutherland, J", "title": ""},
+                {"name": "Endometriosis Patient Research Advisory Board", "title": ""},
+                {"name": "Huang, A", "title": ""},
+                {"name": "Wahl, K", "title": ""},
+                {"name": "Noga, H", "title": ""},
+                {"name": "Brotto, L", "title": ""},
+                {"name": "Maher, C", "title": ""},
+                {"name": "Bedaiwy, MA", "title": ""},
+                { "name": "Williams, C", "title": ""},
+                {"name": "Allaire, C", "title": ""},
+                {"name": "Yong, PJ", "title": ""}
+            ],
+            "journal": "Journal of Endometriosis and Uterine Disorders",
+            "year": "2023",
+            "article_link": "https://www.sciencedirect.com/science/article/pii/S2949838423000154",
+            "pmid": "",
+            "show": "main"
+        },
+        {
+            "article": "Standardized Protocol for Quantification of Nerve Bundle Density as a Biomarker for Endometriosis",
+            "authors": [
+                {"name": "Zoet, G", "title": ""},
+                {"name": "Tucker, DR", "title": ""},
+                {"name": "Orr, NL", "title": ""},
+                {"name": "Alotaibi, FT", "title": ""},
+                {"name": "Liu, YD", "title": ""},
+                {"name": "Noga, H", "title": ""},
+                {"name": "Kobel, M", "title": ""},
+                {"name": "Yong, PJ", "title": ""}
+            ],
+            "journal": "Frontiers in Reproductive Health",
+            "year": "2023",
+            "article_link": "https://pubmed.ncbi.nlm.nih.gov/38098984/",
+            "pmid": "38098984",
+            "show": "main"
+        },
+        {
+            "article": "Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment of Endometriosis-Associated Deep Dyspareunia: A Cross-Sectional Study",
+            "authors": [
+                {"name": "MacLeod, R", "title": ""},
+                {"name": "Parmar, G", "title": ""},
+                {"name": "Wu, S", "title": ""},
+                {"name": "Noga, H", "title": ""},
+                { "name": "Albert, A", "title": ""},
+                {"name": "Flannigan, R", "title": ""},
+                {"name": "Brotto, L", "title": ""},
+                {"name": "Orr, NL", "title": ""},
+                {"name": "Wahl, K", "title": ""},
+                {"name": "Yong, PJ", "title": ""}
+            ],
+            "journal": "Journal of Sexual Medicine",
+            "year": "2023",
+            "article_link": "https://pubmed.ncbi.nlm.nih.gov/38014766/",
+            "pmid": "38014766",
+            "show": "main"
+        },
+        {
             "article":"Ohnut Versus  a Waitlist Control for the Self-management of Endometriosis-Associated Deep Dyspareunia: Protocol for a Pilot Randomized Controlled Trial",
             "authors":[
                 {"name":"Zhang, S", "title":""},
@@ -560,66 +620,6 @@
             "article_link":"https://pubmed.ncbi.nlm.nih.gov/28489996/",
             "pmid":"28489996",
             "show" : "yes" 
-        },
-        {
-            "article": "A Patient-Oriented Workshop on Sexual Pain and Endometriosis: Preliminary Evidence for Improvements in Painful Intercourse Self- Efficacy",
-            "authors": [
-                {"name": "Orr, NL", "title": ""},
-                {"name": "Sutherland, J", "title": ""},
-                {"name": "Endometriosis Patient Research Advisory Board", "title": ""},
-                {"name": "Huang, A", "title": ""},
-                {"name": "Wahl, K", "title": ""},
-                {"name": "Noga, H", "title": ""},
-                {"name": "Brotto, L", "title": ""},
-                {"name": "Maher, C", "title": ""},
-                {"name": "Bedaiwy, MA", "title": ""},
-                { "name": "Williams, C", "title": ""},
-                {"name": "Allaire, C", "title": ""},
-                {"name": "Yong, PJ", "title": ""}
-            ],
-            "journal": "Journal of Endometriosis and Uterine Disorders",
-            "year": "2023",
-            "article_link": "https://www.sciencedirect.com/science/article/pii/S2949838423000154",
-            "pmid": "",
-            "show": "main"
-        },
-        {
-            "article": "Standardized Protocol for Quantification of Nerve Bundle Density as a Biomarker for Endometriosis",
-            "authors": [
-                {"name": "Zoet, G", "title": ""},
-                {"name": "Tucker, DR", "title": ""},
-                {"name": "Orr, NL", "title": ""},
-                {"name": "Alotaibi, FT", "title": ""},
-                {"name": "Liu, YD", "title": ""},
-                {"name": "Noga, H", "title": ""},
-                {"name": "Kobel, M", "title": ""},
-                {"name": "Yong, PJ", "title": ""}
-            ],
-            "journal": "Frontiers in Reproductive Health",
-            "year": "2023",
-            "article_link": "https://pubmed.ncbi.nlm.nih.gov/38098984/",
-            "pmid": "38098984",
-            "show": "main"
-        },
-        {
-            "article": "Acceptability, Reliability, and Validity of a Vaginal Insert for the Self-Assessment of Endometriosis-Associated Deep Dyspareunia: A Cross-Sectional Study",
-            "authors": [
-                {"name": "MacLeod, R", "title": ""},
-                {"name": "Parmar, G", "title": ""},
-                {"name": "Wu, S", "title": ""},
-                {"name": "Noga, H", "title": ""},
-                { "name": "Albert, A", "title": ""},
-                {"name": "Flannigan, R", "title": ""},
-                {"name": "Brotto, L", "title": ""},
-                {"name": "Orr, NL", "title": ""},
-                {"name": "Wahl, K", "title": ""},
-                {"name": "Yong, PJ", "title": ""}
-            ],
-            "journal": "Journal of Sexual Medicine",
-            "year": "2023",
-            "article_link": "https://pubmed.ncbi.nlm.nih.gov/38014766/",
-            "pmid": "38014766",
-            "show": "main"
         }
     ],
     "Presentations": [
